@@ -1,0 +1,58 @@
+{
+  "reporting_guide": "Report crop damage within 72 hours of the calamity event. Take geo-tagged photographs of affected fields. Contact nearest agriculture officer or insurance company representative. Do not harvest or destroy affected crop before survey.",
+  "compensation_process": "Surveyor assesses damage using crop cutting experiments or remote sensing. Claim amount calculated based on sum insured and percentage of loss. Amount credited to farmer's bank account within 15-30 days of claim approval.",
+  "required_documents": [
+    "Aadhaar card and bank passbook",
+    "Insurance policy / enrollment receipt",
+    "Land records and sowing certificate",
+    "Geo-tagged photographs of damaged crop",
+    "Death certificate (for farmer suicide claims)",
+    "Weather report or calamity notification from government"
+  ],
+  "claim_process": [
+    "Report loss to insurance company within 72 hours",
+    "Intimate loss to bank (for loanee farmers)",
+    "Crop survey conducted by insurance surveyor",
+    "Submit claim form with supporting documents",
+    "Claim assessment and approval by insurance company",
+    "Compensation credited to registered bank account"
+  ],
+  "faqs": [
+    {
+      "q": "What crops are covered under PMFBY?",
+      "a": "All food crops, oilseeds, and annual commercial/horticultural crops notified by state governments are covered under PMFBY."
+    },
+    {
+      "q": "How is the premium calculated?",
+      "a": "Farmers pay 2% for Kharif, 1.5% for Rabi food crops, and 5% for commercial/horticultural crops. Remaining premium is shared by Central and State governments."
+    },
+    {
+      "q": "What is sum insured?",
+      "a": "Sum insured is the guaranteed amount per hectare based on scale of finance or average yield multiplied by minimum support price."
+    },
+    {
+      "q": "Can I claim for partial crop loss?",
+      "a": "Yes, claims can be filed for partial losses when yield falls below the threshold yield specified in the policy."
+    }
+  ],
+  "helplines": [
+    { "name": "PMFBY Helpline", "number": "14447" },
+    { "name": "Kisan Call Centre", "number": "1800-180-1551" },
+    { "name": "National Disaster Management", "number": "1078" },
+    { "name": "Agriculture Ministry Helpline", "number": "1800-270-0222" }
+  ],
+  "programs": [
+    {
+      "name": "PM Fasal Bima Yojana (PMFBY)",
+      "description": "National crop insurance scheme covering yield losses from natural calamities, pests, and diseases at subsidized premium rates."
+    },
+    {
+      "name": "Weather Based Crop Insurance (WBCIS)",
+      "description": "Insurance based on weather parameters like rainfall, temperature, and humidity rather than actual yield loss."
+    },
+    {
+      "name": "State Crop Insurance Schemes",
+      "description": "Various state governments offer additional crop insurance schemes complementing PMFBY with state-specific coverage."
+    }
+  ]
+}

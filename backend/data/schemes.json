@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pm_kisan",
+    "name": "PM Kisan",
+    "name_hi": "प्रधानमंत्री किसान सम्मान निधि",
+    "short_description": "Income support of ₹6,000 per year to all farmer families in three equal installments.",
+    "benefits": ["₹6,000 annual income support in 3 installments of ₹2,000", "Direct benefit transfer to bank accounts", "Covers all landholding farmer families"],
+    "eligibility": ["All landholding farmer families", "Small and marginal farmers", "Must have cultivable land records"],
+    "documents": ["Aadhaar card", "Land ownership records", "Bank account details", "Mobile number linked to Aadhaar"],
+    "application_process": "Register at pmkisan.gov.in or visit nearest agriculture office. Verification by state government followed by DBT.",
+    "website": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "pmfby",
+    "name": "PM Fasal Bima Yojana (PMFBY)",
+    "name_hi": "प्रधानमंत्री फसल बीमा योजना",
+    "short_description": "Comprehensive crop insurance scheme providing financial support on crop failure due to natural calamities.",
+    "benefits": ["Low premium rates: 2% Kharif, 1.5% Rabi, 5% commercial crops", "Covers yield losses and post-harvest losses", "Technology-based claim assessment using remote sensing"],
+    "eligibility": ["All farmers growing notified crops in notified areas", "Compulsory for loanee farmers", "Voluntary for non-loanee farmers"],
+    "documents": ["Aadhaar card", "Bank account details", "Land records / Sowing certificate", "Crop details"],
+    "application_process": "Enroll through banks, CSCs, or insurance companies within cutoff dates. Premium deducted or paid directly.",
+    "website": "https://pmfby.gov.in"
+  },
+  {
+    "id": "kcc",
+    "name": "Kisan Credit Card (KCC)",
+    "name_hi": "किसान क्रेडिट कार्ड",
+    "short_description": "Provides farmers timely access to credit for crop cultivation and allied activities at subsidized interest rates.",
+    "benefits": ["Credit limit based on land holding and crop pattern", "Interest subvention of 2% on prompt repayment", "Additional 3% subvention for timely repayment", "Covers crop production, maintenance, and marketing"],
+    "eligibility": ["All farmers including tenant farmers and oral lessees", "Self Help Groups and Joint Liability Groups", "Must have land records or tenancy proof"],
+    "documents": ["Aadhaar card", "Land records / 7/12 extract", "Passport size photos", "Bank account details"],
+    "application_process": "Apply at nearest bank branch or through online portal. Bank assesses credit limit and issues KCC.",
+    "website": "https://www.india.gov.in/kisan-credit-card-kcc"
+  },
+  {
+    "id": "soil_health",
+    "name": "Soil Health Card Scheme",
+    "name_hi": "मृदा स्वास्थ्य कार्ड योजना",
+    "short_description": "Provides soil health cards to farmers with crop-wise nutrient recommendations for balanced fertilizer use.",
+    "benefits": ["Free soil testing every 2 years", "Crop-specific fertilizer recommendations", "Reduces input costs and improves soil health", "Promotes balanced nutrient management"],
+    "eligibility": ["All farmers across India", "Priority to small and marginal farmers"],
+    "documents": ["Aadhaar card", "Land details", "Sample collection from field"],
+    "application_process": "Contact district agriculture officer or soil testing lab. Soil sample collected and analyzed; card issued within 15 days.",
+    "website": "https://soilhealth.dac.gov.in"
+  },
+  {
+    "id": "enam",
+    "name": "eNAM (National Agriculture Market)",
+    "name_hi": "राष्ट्रीय कृषि बाजार (ई-नाम)",
+    "short_description": "Online trading platform connecting APMC mandis for transparent and competitive price discovery.",
+    "benefits": ["Online bidding for better prices", "Transparent price discovery", "Reduced intermediaries", "Access to pan-India buyers"],
+    "eligibility": ["All farmers, traders, and FPOs", "Must register on eNAM portal", "Commodity must be listed on platform"],
+    "documents": ["Aadhaar card", "Bank account details", "Mandi registration (for traders)", "Mobile number"],
+    "application_process": "Register at enam.gov.in with Aadhaar and bank details. Visit nearest eNAM-enabled mandi for trading.",
+    "website": "https://enam.gov.in"
+  },
+  {
+    "id": "pmksy",
+    "name": "PM Krishi Sinchai Yojana",
+    "name_hi": "प्रधानमंत्री कृषि सिंचाई योजना",
+    "short_description": "Ensures access to irrigation for every farm through convergence of irrigation schemes and water use efficiency.",
+    "benefits": ["Micro irrigation subsidy up to 55-70%", "Drip and sprinkler system support", "Watershed development", "Per drop more crop initiative"],
+    "eligibility": ["All farmers with cultivable land", "Priority to small and marginal farmers", "Must have water source availability"],
+    "documents": ["Aadhaar card", "Land records", "Bank account details", "Water source proof"],
+    "application_process": "Apply through state agriculture/horticulture department or online portal. Site inspection followed by subsidy release.",
+    "website": "https://pmksy.gov.in"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "tomato_early_blight",
+    "name": "Early Blight",
+    "crop": "Tomato",
+    "description": "Early blight is a common fungal disease affecting tomato plants, caused by Alternaria solani. It appears as dark spots with concentric rings on lower leaves.",
+    "symptoms": ["Dark brown spots with concentric rings on leaves", "Yellowing of lower leaves", "Premature leaf drop", "Dark lesions on stems and fruits"],
+    "causes": ["Fungus Alternaria solani", "Warm humid conditions", "Poor air circulation", "Infected seed or plant debris"],
+    "spread": "Spreads through wind, rain splash, contaminated tools, and infected plant residue in soil.",
+    "affected_crops": ["Tomato", "Potato", "Eggplant", "Pepper"]
+  },
+  {
+    "id": "tomato_late_blight",
+    "name": "Late Blight",
+    "crop": "Tomato",
+    "description": "Late blight is a devastating disease caused by Phytophthora infestans, responsible for the Irish potato famine. It spreads rapidly in cool, wet conditions.",
+    "symptoms": ["Water-soaked gray-green lesions on leaves", "White fungal growth on leaf undersides", "Brown rot on fruits", "Rapid plant collapse"],
+    "causes": ["Phytophthora infestans fungus", "Cool wet weather", "High humidity above 90%", "Infected tubers or transplants"],
+    "spread": "Spores spread via wind over long distances, rain splash, and contaminated equipment.",
+    "affected_crops": ["Tomato", "Potato"]
+  },
+  {
+    "id": "potato_early_blight",
+    "name": "Early Blight",
+    "crop": "Potato",
+    "description": "Early blight on potato causes characteristic bull's-eye lesions on foliage, reducing photosynthesis and tuber quality.",
+    "symptoms": ["Dark lesions with target-like rings", "Yellowing and wilting of lower leaves", "Stem cankers", "Tuber lesions with dry rot"],
+    "causes": ["Alternaria solani", "Nitrogen deficiency stress", "Extended leaf wetness", "Crop residue in soil"],
+    "spread": "Persists in soil on infected debris; spreads via wind-blown spores and irrigation water.",
+    "affected_crops": ["Potato", "Tomato", "Eggplant"]
+  },
+  {
+    "id": "wheat_rust",
+    "name": "Wheat Rust",
+    "crop": "Wheat",
+    "description": "Wheat rust is a fungal disease that appears as reddish-brown pustules on leaves and stems, significantly reducing grain yield.",
+    "symptoms": ["Reddish-brown pustules on leaves", "Yellow streaks on leaf surface", "Shriveled grains", "Reduced tillering"],
+    "causes": ["Puccinia triticina fungus", "Moderate temperatures 15-22°C", "Heavy dew and humidity", "Susceptible wheat varieties"],
+    "spread": "Urediniospores spread via wind over hundreds of kilometers; survives on alternate hosts.",
+    "affected_crops": ["Wheat", "Barley", "Rye"]
+  },
+  {
+    "id": "rice_blast",
+    "name": "Rice Blast",
+    "crop": "Rice",
+    "description": "Rice blast is one of the most destructive rice diseases worldwide, caused by Magnaporthe oryzae, affecting all above-ground parts.",
+    "symptoms": ["Diamond-shaped lesions with gray centers", "Neck rot causing panicle breakage", "Leaf blighting", "Reduced grain filling"],
+    "causes": ["Magnaporthe oryzae fungus", "High nitrogen fertilization", "Cloudy humid weather", "Dense planting"],
+    "spread": "Conidia spread through wind and rain splash; survives on rice stubble and weeds.",
+    "affected_crops": ["Rice", "Finger millet", "Wheat"]
+  },
+  {
+    "id": "corn_gray_leaf_spot",
+    "name": "Gray Leaf Spot",
+    "crop": "Corn",
+    "description": "Gray leaf spot is a foliar disease of maize caused by Cercospora zeae-maydis, reducing photosynthetic area significantly.",
+    "symptoms": ["Rectangular gray to tan lesions", "Lesions run parallel to leaf veins", "Premature leaf death", "Reduced ear size"],
+    "causes": ["Cercospora zeae-maydis fungus", "Continuous corn cropping", "Warm humid conditions", "Residue-borne inoculum"],
+    "spread": "Spores spread short distances by wind and rain; overwinters in corn residue.",
+    "affected_crops": ["Corn", "Maize"]
+  },
+  {
+    "id": "cotton_bollworm",
+    "name": "Bollworm Damage",
+    "crop": "Cotton",
+    "description": "Cotton bollworm (Helicoverpa armigera) larvae feed on squares, flowers, and bolls, causing direct yield loss.",
+    "symptoms": ["Holes in bolls with frass", "Damaged flowers and squares", "Premature boll shedding", "Lint quality reduction"],
+    "causes": ["Helicoverpa armigera pest", "Monoculture cropping", "Lack of natural predators", "Warm dry conditions favoring pest"],
+    "spread": "Adult moths migrate long distances; multiple generations per season increase damage.",
+    "affected_crops": ["Cotton", "Tomato", "Chickpea", "Sorghum"]
+  },
+  {
+    "id": "pepper_bacterial_spot",
+    "name": "Bacterial Spot",
+    "crop": "Pepper",
+    "description": "Bacterial spot affects pepper leaves and fruits, caused by Xanthomonas species, reducing marketable yield.",
+    "symptoms": ["Small water-soaked spots on leaves", "Raised scabby lesions on fruits", "Leaf yellowing and drop", "Defoliation in severe cases"],
+    "causes": ["Xanthomonas euvesicatoria bacteria", "Warm wet weather", "Overhead irrigation", "Infected seeds"],
+    "spread": "Spreads via rain splash, workers, tools, and contaminated seed.",
+    "affected_crops": ["Pepper", "Tomato"]
+  },
+  {
+    "id": "grape_powdery_mildew",
+    "name": "Powdery Mildew",
+    "crop": "Grape",
+    "description": "Powdery mildew on grape is caused by Erysiphe necator, appearing as white powdery coating on leaves and berries.",
+    "symptoms": ["White powdery coating on leaves", "Stunted shoot growth", "Berry splitting", "Reduced sugar content"],
+    "causes": ["Erysiphe necator fungus", "High humidity with dry leaves", "Shaded canopy", "Susceptible varieties"],
+    "spread": "Ascospores released in spring; conidia spread by wind throughout the season.",
+    "affected_crops": ["Grape", "Apple", "Mango"]
+  },
+  {
+    "id": "apple_scab",
+    "name": "Apple Scab",
+    "crop": "Apple",
+    "description": "Apple scab is a fungal disease caused by Venturia inaequalis, producing olive-green spots on leaves and fruit.",
+    "symptoms": ["Olive-green velvety spots on leaves", "Scabby lesions on fruit", "Premature leaf drop", "Cracked and deformed fruit"],
+    "causes": ["Venturia inaequalis fungus", "Spring rains and wet conditions", "Overhead irrigation", "Infected leaf litter"],
+    "spread": "Ascospores released from fallen leaves during spring rains; spreads via wind and rain.",
+    "affected_crops": ["Apple", "Pear"]
+  },
+  {
+    "id": "mango_anthracnose",
+    "name": "Anthracnose",
+    "crop": "Mango",
+    "description": "Mango anthracnose caused by Colletotrichum gloeosporioides affects flowers, leaves, and fruits, causing significant post-harvest losses.",
+    "symptoms": ["Black spots on leaves and fruits", "Flower blight and drop", "Stem-end rot on fruits", "Twig dieback"],
+    "causes": ["Colletotrichum gloeosporioides fungus", "Rainy humid weather during flowering", "Wounded fruit", "Infected plant debris"],
+    "spread": "Conidia spread by rain splash and wind; survives on infected twigs and fallen leaves.",
+    "affected_crops": ["Mango", "Avocado", "Papaya"]
+  },
+  {
+    "id": "banana_sigatoka",
+    "name": "Sigatoka Leaf Spot",
+    "crop": "Banana",
+    "description": "Sigatoka (Black Sigatoka) is a serious banana disease caused by Mycosphaerella fijiensis, reducing photosynthesis and yield.",
+    "symptoms": ["Dark streaks on leaves progressing to large spots", "Premature leaf death", "Reduced bunch size", "Uneven fruit ripening"],
+    "causes": ["Mycosphaerella fijiensis fungus", "High rainfall and humidity", "Poor drainage", "Lack of fungicide management"],
+    "spread": "Ascospores and conidia spread via wind and rain over long distances.",
+    "affected_crops": ["Banana", "Plantain"]
+  }
+]

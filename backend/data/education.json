@@ -1,0 +1,34 @@
+{
+  "categories": {
+    "videos": [
+      { "title": "Modern Drip Irrigation Setup", "description": "Step-by-step guide to installing drip irrigation for water-efficient farming.", "duration": "12 min", "url": "https://www.youtube.com/results?search_query=drip+irrigation+farming+hindi" },
+      { "title": "Organic Compost Making", "description": "Learn to make vermicompost and organic manure at home.", "duration": "15 min", "url": "https://www.youtube.com/results?search_query=organic+compost+making+hindi" },
+      { "title": "Tractor Maintenance Basics", "description": "Essential tractor care tips for small farmers.", "duration": "10 min", "url": "https://www.youtube.com/results?search_query=tractor+maintenance+hindi" }
+    ],
+    "awareness": [
+      { "title": "Identifying Common Crop Diseases", "description": "Visual guide to recognizing early signs of fungal and bacterial diseases." },
+      { "title": "Pest Management Without Chemicals", "description": "Integrated Pest Management (IPM) techniques for sustainable farming." },
+      { "title": "Seed Treatment Before Sowing", "description": "How to treat seeds with fungicides and bio-agents for healthy crops." }
+    ],
+    "techniques": [
+      { "title": "Precision Farming with Technology", "description": "Using mobile apps and sensors for smart agriculture decisions." },
+      { "title": "Multi-Cropping for Better Income", "description": "Intercropping strategies to maximize land productivity." },
+      { "title": "Protected Cultivation (Polyhouse)", "description": "Introduction to greenhouse farming for high-value crops." }
+    ],
+    "training": [
+      { "title": "ATMA Training Programs", "description": "Agriculture Technology Management Agency offers free farmer training.", "url": "https://agricoop.nic.in" },
+      { "title": "KVK Farmer Training", "description": "Krishi Vigyan Kendras conduct regular training on modern techniques.", "url": "https://kvk.icar.gov.in" },
+      { "title": "PMKSY Micro Irrigation Training", "description": "Training on drip and sprinkler irrigation system installation." }
+    ],
+    "practices": [
+      { "title": "Crop Rotation Guide", "description": "Best crop rotation sequences for maintaining soil fertility." },
+      { "title": "Water Conservation Methods", "description": "Rainwater harvesting and mulching techniques for dry regions." },
+      { "title": "Post-Harvest Management", "description": "Proper storage techniques to reduce grain and produce losses." }
+    ],
+    "organic": [
+      { "title": "Organic Farming Certification", "description": "Steps to get organic certification through NPOP standards." },
+      { "title": "Natural Pesticide Recipes", "description": "Neemastra, Agniastra, and other traditional organic preparations." },
+      { "title": "Organic Nutrient Management", "description": "Using green manure, compost, and bio-fertilizers instead of chemicals." }
+    ]
+  }
+}

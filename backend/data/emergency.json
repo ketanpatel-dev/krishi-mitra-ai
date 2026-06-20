@@ -1,0 +1,28 @@
+{
+  "helplines": [
+    { "name": "Kisan Call Centre (Toll Free)", "phone": "1800-180-1551", "hours": "6 AM - 10 PM, All days" },
+    { "name": "PM Kisan Helpline", "phone": "155261", "hours": "9 AM - 6 PM" },
+    { "name": "National Farmer Helpline", "phone": "1800-270-0222", "hours": "24/7" }
+  ],
+  "departments": [
+    { "name": "Ministry of Agriculture & Farmers Welfare", "phone": "011-23382366", "address": "Krishi Bhawan, New Delhi" },
+    { "name": "State Agriculture Department", "phone": "Contact local district office", "address": "District Collectorate, Agriculture Wing" },
+    { "name": "National Horticulture Board", "phone": "011-25843705", "address": "85, Institutional Area, Gurgaon" }
+  ],
+  "offices": [
+    { "name": "District Agriculture Office", "phone": "Contact District Agriculture Officer", "address": "Near District Collectorate" },
+    { "name": "Block Agriculture Office", "phone": "Contact Block Agriculture Officer", "address": "Block Development Office Complex" },
+    { "name": "Soil Testing Laboratory", "phone": "Contact district agriculture office", "address": "District Agriculture Campus" }
+  ],
+  "kvks": [
+    { "name": "Krishi Vigyan Kendra (Nearest)", "phone": "Contact ICAR KVK directory", "address": "Search kvk.icar.gov.in for nearest KVK" },
+    { "name": "KVK Training Programs", "phone": "1800-180-1551", "address": "Free training on modern farming techniques" }
+  ],
+  "emergency_contacts": [
+    { "name": "Police Emergency", "phone": "100" },
+    { "name": "Fire Emergency", "phone": "101" },
+    { "name": "Ambulance", "phone": "108" },
+    { "name": "Disaster Management", "phone": "1078" },
+    { "name": "Animal Husbandry Emergency", "phone": "Contact local veterinary hospital" }
+  ]
+}

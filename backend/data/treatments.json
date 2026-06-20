@@ -1,0 +1,98 @@
+{
+  "tomato_early_blight": {
+    "pesticides": ["Chlorothalonil 75% WP at 2g/L", "Mancozeb 75% WP at 2.5g/L", "Azoxystrobin 23% SC at 1ml/L"],
+    "organic": ["Neem oil spray 5ml/L weekly", "Baking soda solution (1 tbsp/L)", "Copper oxychloride 50% WP at 3g/L"],
+    "preventive": ["Use disease-free seeds", "Crop rotation with non-solanaceous crops", "Ensure proper plant spacing", "Remove infected plant debris", "Avoid overhead irrigation"],
+    "fertilizer": ["Balanced NPK with adequate potassium", "Avoid excess nitrogen", "Apply calcium nitrate for cell wall strength"],
+    "water": "Use drip irrigation; water at base of plants in morning; avoid wetting foliage.",
+    "recovery_time": "2-3 weeks with timely treatment"
+  },
+  "tomato_late_blight": {
+    "pesticides": ["Metalaxyl + Mancozeb at 2.5g/L", "Dimethomorph 50% WP at 1g/L", "Cymoxanil + Mancozeb combinations"],
+    "organic": ["Copper-based fungicides", "Remove and destroy infected plants immediately", "Improve drainage"],
+    "preventive": ["Plant resistant varieties", "Apply preventive fungicide before rainy season", "Destroy volunteer potato/tomato plants", "Ensure good air circulation"],
+    "fertilizer": ["Moderate nitrogen application", "Potassium-rich fertilizers to strengthen plant immunity"],
+    "water": "Reduce irrigation during wet periods; ensure field drainage; avoid waterlogging.",
+    "recovery_time": "3-4 weeks; severe cases may require replanting"
+  },
+  "potato_early_blight": {
+    "pesticides": ["Mancozeb 75% WP at 2.5g/L", "Chlorothalonil spray every 7-10 days", "Propineb 70% WP at 2g/L"],
+    "organic": ["Neem cake soil application", "Trichoderma bio-fungicide", "Crop rotation with cereals"],
+    "preventive": ["Certified disease-free seed tubers", "Hill soil around plants", "Remove volunteer potatoes", "Balanced fertilization"],
+    "fertilizer": ["Split application of nitrogen", "Adequate potassium and phosphorus at tuber initiation"],
+    "water": "Consistent soil moisture; avoid drought stress followed by heavy irrigation.",
+    "recovery_time": "2-3 weeks"
+  },
+  "wheat_rust": {
+    "pesticides": ["Propiconazole 25% EC at 1ml/L", "Tebuconazole 25% EC at 1ml/L", "Triadimefon 25% WP at 1g/L"],
+    "organic": ["Sulfur dust application", "Remove alternate host weeds", "Early sowing to escape peak rust period"],
+    "preventive": ["Plant rust-resistant varieties", "Timely sowing", "Avoid excess nitrogen", "Monitor fields weekly during heading stage"],
+    "fertilizer": ["Balanced NPK; avoid late nitrogen top-dressing", "Zinc and manganese micronutrients"],
+    "water": "Avoid water stress during grain filling; ensure adequate but not excessive irrigation.",
+    "recovery_time": "1-2 weeks if treated at first sign"
+  },
+  "rice_blast": {
+    "pesticides": ["Tricyclazole 75% WP at 0.6g/L", "Isoprothiolane 40% EC at 1.5ml/L", "Carbendazim 50% WP at 1g/L"],
+    "organic": ["Silicon-rich fertilizers", "Pseudomonas fluorescens seed treatment", "Balanced plant population"],
+    "preventive": ["Use resistant varieties", "Avoid excessive nitrogen", "Maintain 20x20 cm spacing", "Remove weed hosts"],
+    "fertilizer": ["Split nitrogen application", "Potassium at panicle initiation", "Silicon fertilizers enhance resistance"],
+    "water": "Maintain intermittent irrigation; avoid prolonged flooding during blast-favorable weather.",
+    "recovery_time": "2-3 weeks"
+  },
+  "corn_gray_leaf_spot": {
+    "pesticides": ["Pyraclostrobin + Metconazole at 1ml/L", "Azoxystrobin 23% SC at 1ml/L", "Propiconazole 25% EC at 1ml/L"],
+    "organic": ["Crop rotation with soybeans", "Tillage to bury residue", "Resistant hybrid selection"],
+    "preventive": ["Rotate crops annually", "Plant tolerant hybrids", "Manage crop residue", "Avoid continuous corn"],
+    "fertilizer": ["Balanced nutrition; adequate potassium", "Avoid excessive nitrogen in high-risk fields"],
+    "water": "Avoid water stress during tasseling and silking stages.",
+    "recovery_time": "2-4 weeks"
+  },
+  "cotton_bollworm": {
+    "pesticides": ["Emamectin benzoate 5% SG at 0.4g/L", "Spinosad 45% SC at 0.3ml/L", "Indoxacarb 14.5% SC at 0.5ml/L"],
+    "organic": ["NPV (Nuclear Polyhedrosis Virus) spray", "Pheromone traps for monitoring", "Bird perches for natural predation"],
+    "preventive": ["Install pheromone traps", "Scout fields twice weekly", "Destroy crop residue after harvest", "Intercrop with marigold"],
+    "fertilizer": ["Balanced NPK; avoid excess nitrogen attracting pests", "Micronutrient sprays for plant vigor"],
+    "water": "Maintain adequate moisture; avoid water stress that weakens plant defense.",
+    "recovery_time": "1-2 weeks per generation; multiple sprays may be needed"
+  },
+  "pepper_bacterial_spot": {
+    "pesticides": ["Copper hydroxide 77% WP at 2.5g/L", "Streptomycin sulfate 10% at 0.5g/L", "Copper oxychloride 50% WP at 3g/L"],
+    "organic": ["Copper sprays with fixed copper", "Remove infected plants", "Use drip irrigation only"],
+    "preventive": ["Use certified disease-free seed", "Avoid working in wet fields", "Disinfect tools", "Crop rotation 2-3 years"],
+    "fertilizer": ["Balanced nutrition; calcium sprays reduce bacterial susceptibility"],
+    "water": "Drip irrigation only; never overhead water; irrigate in morning.",
+    "recovery_time": "3-4 weeks"
+  },
+  "grape_powdery_mildew": {
+    "pesticides": ["Sulfur 80% WP at 3g/L", "Myclobutanil 10% WP at 0.5g/L", "Penconazole 10% EC at 0.5ml/L"],
+    "organic": ["Wettable sulfur sprays", "Potassium bicarbonate 0.5%", "Canopy management for air flow"],
+    "preventive": ["Open canopy pruning", "Remove infected shoots", "Apply sulfur preventively", "Monitor humidity"],
+    "fertilizer": ["Moderate nitrogen; adequate potassium and phosphorus"],
+    "water": "Avoid excessive irrigation raising humidity; morning irrigation preferred.",
+    "recovery_time": "2-3 weeks"
+  },
+  "apple_scab": {
+    "pesticides": ["Captan 50% WP at 2g/L", "Difenoconazole 25% EC at 0.5ml/L", "Mancozeb 75% WP at 2.5g/L"],
+    "organic": ["Lime sulfur dormant spray", "Remove fallen leaves in autumn", "Resistant rootstocks"],
+    "preventive": ["Apply fungicide at green tip stage", "Rake and destroy leaf litter", "Prune for air circulation"],
+    "fertilizer": ["Balanced orchard nutrition program", "Avoid excess nitrogen promoting soft tissue"],
+    "water": "Avoid sprinkler irrigation during scab-favorable weather.",
+    "recovery_time": "2-4 weeks"
+  },
+  "mango_anthracnose": {
+    "pesticides": ["Carbendazim 50% WP at 1g/L", "Mancozeb 75% WP at 2.5g/L", "Copper oxychloride 50% WP at 3g/L"],
+    "organic": ["Neem oil 5ml/L during flowering", "Prune dead twigs", "Post-harvest hot water treatment"],
+    "preventive": ["Spray before flowering", "Harvest at proper maturity", "Store fruits in ventilated conditions"],
+    "fertilizer": ["Balanced NPK with micronutrients", "Boron spray before flowering"],
+    "water": "Avoid overhead irrigation during flowering; maintain orchard floor cleanliness.",
+    "recovery_time": "2-3 weeks for trees; fruits may not recover"
+  },
+  "banana_sigatoka": {
+    "pesticides": ["Propiconazole 25% EC at 1ml/L", "Mancozeb 75% WP at 2.5g/L", "Azoxystrobin 23% SC at 1ml/L"],
+    "organic": ["Remove infected leaves promptly", "Improve plantation drainage", "Maintain proper plant density"],
+    "preventive": ["Regular deleafing of infected leaves", "Apply oil-based fungicides", "Use resistant varieties where available"],
+    "fertilizer": ["Potassium-rich fertilizers strengthen leaf resistance", "Balanced NPK program"],
+    "water": "Ensure good drainage; avoid waterlogging in plantation rows.",
+    "recovery_time": "3-5 weeks with consistent management"
+  }
+}
