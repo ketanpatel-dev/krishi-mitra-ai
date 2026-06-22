@@ -8,28 +8,44 @@
   }
 
   body {
-    @apply bg-krishi-cream text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100;
+    @apply bg-gradient-to-br from-krishi-cream via-green-50 to-emerald-50 text-gray-900 antialiased dark:from-gray-950 dark:via-slate-900 dark:to-gray-900 dark:text-gray-100;
   }
 }
 
 @layer components {
   .glass-card {
-    @apply rounded-2xl border border-white/40 bg-white/70 shadow-lg backdrop-blur-glass dark:border-white/10 dark:bg-gray-900/70;
+    @apply rounded-2xl border border-white/50 bg-white/80 shadow-lg backdrop-blur-glass dark:border-white/10 dark:bg-gray-900/80;
+  }
+
+  .glass-card-premium {
+    @apply rounded-3xl border border-white/60 bg-gradient-to-br from-white/90 via-white/80 to-green-50/50 shadow-2xl backdrop-blur-glass dark:border-white/20 dark:from-gray-900/90 dark:via-gray-900/80 dark:to-emerald-900/20;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-krishi-green px-6 py-3 text-lg font-semibold text-white shadow-md transition hover:bg-krishi-dark focus:outline-none focus:ring-2 focus:ring-krishi-light;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-krishi-green to-krishi-teal px-7 py-3 text-lg font-semibold text-white shadow-lg transition hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-krishi-emerald focus:ring-offset-2;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl border-2 border-krishi-green bg-transparent px-6 py-3 text-lg font-semibold text-krishi-green transition hover:bg-krishi-green/10 dark:text-krishi-light;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border-2 border-krishi-green bg-transparent px-7 py-3 text-lg font-semibold text-krishi-green transition hover:bg-krishi-green/10 dark:text-krishi-emerald dark:border-krishi-emerald;
   }
 
   .page-title {
-    @apply text-3xl font-bold text-krishi-dark dark:text-krishi-light md:text-4xl;
+    @apply text-4xl md:text-5xl font-bold bg-gradient-to-r from-krishi-dark via-krishi-green to-krishi-teal bg-clip-text text-transparent dark:from-krishi-light dark:via-krishi-emerald dark:to-krishi-teal;
   }
 
   .section-title {
-    @apply text-xl font-semibold text-krishi-green dark:text-krishi-light;
+    @apply text-2xl font-bold text-krishi-green dark:text-krishi-emerald;
+  }
+
+  .gradient-heading {
+    @apply bg-gradient-to-r from-krishi-dark to-krishi-teal bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition duration-300 hover:shadow-2xl hover:scale-105;
+  }
+
+  .ai-scan-pulse {
+    @apply animate-pulse-ring;
   }
 }
