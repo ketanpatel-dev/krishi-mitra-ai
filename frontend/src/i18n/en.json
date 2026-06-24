@@ -10,6 +10,7 @@
   "nav.schemes": "Govt Schemes",
   "nav.insurance": "Crop Insurance",
   "nav.emergency": "Emergency",
+  "nav.damage": "Crop Damage Help",
   "nav.recommend": "Crop Advisor",
   "nav.education": "Education",
   "nav.admin": "Admin",
@@ -30,6 +31,8 @@
   "home.features.market.desc": "Live mandi prices for wheat, rice, tomato and more.",
   "home.features.schemes": "Government Schemes",
   "home.features.schemes.desc": "PM Kisan, PMFBY, KCC and other farmer benefits.",
+  "home.features.damage": "Disaster Assistance",
+  "home.features.damage.desc": "Flood, drought, cyclone and pest damage recovery guide with insurance claims.",
   "detect.title": "Crop Disease Detection",
   "detect.subtitle": "Upload or capture a crop image for AI-powered diagnosis",
   "detect.upload": "Upload Image",
@@ -128,5 +131,14 @@
   "severity.high": "High",
   "trend.up": "Up",
   "trend.down": "Down",
-  "trend.stable": "Stable"
+  "trend.stable": "Stable",
+  "damage.title": "Crop Damage Assistance",
+  "damage.subtitle": "Immediate guidance for flood, drought, cyclone, hailstorm and pest damage",
+  "damage.urgent": "Report crop damage within 72 hours to qualify for PMFBY insurance claim. Call 1800-180-1551",
+  "damage.immediate": "What To Do Immediately",
+  "damage.documents": "Required Documents",
+  "damage.compensation": "Compensation Process",
+  "damage.insurance": "Insurance Claim Process",
+  "damage.helpline": "Helpline",
+  "damage.risk": "Risk"
 }

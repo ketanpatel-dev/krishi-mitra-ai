@@ -10,11 +10,21 @@ from services.market import get_market_prices
 from services.schemes_service import get_schemes, update_scheme
 from services.crop_recommender import recommend_crop
 from services.data_store import load_json
+from services.i18n import (
+    localize_scheme,
+    localize_weather,
+    localize_crop_name,
+    localize_disaster,
+)
 
 load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
+
+
+def get_lang():
+    return request.args.get("lang") or (request.get_json(silent=True) or {}).get("lang", "en")
 
 
 @app.route("/api/health")
@@ -32,7 +42,8 @@ def api_detect_disease():
     image_bytes = file.read()
     if len(image_bytes) == 0:
         return jsonify({"error": "Empty image"}), 400
-    result = detect_disease(image_bytes)
+    lang = request.form.get("lang", "en")
+    result = detect_disease(image_bytes, lang)
     return jsonify(result)
 
 
@@ -47,7 +58,6 @@ def api_disease_info(disease_id):
 
 @app.route("/api/treatment/<disease_id>")
 def api_treatment(disease_id):
-    from services.data_store import load_json
     treatments = load_json("treatments.json")
     if disease_id in treatments:
         return jsonify(treatments[disease_id])
@@ -61,33 +71,58 @@ def api_chat():
     if not message:
         return jsonify({"error": "Message required"}), 400
     history = data.get("history", [])
-    return jsonify(chat(message, history))
+    lang = data.get("lang", "en")
+    return jsonify(chat(message, history, lang))
 
 
 @app.route("/api/weather")
 def api_weather():
     city = request.args.get("city", "Delhi")
-    return jsonify(get_weather(city))
+    lang = get_lang()
+    data = get_weather(city)
+    return jsonify(localize_weather(data, lang))
 
 
 @app.route("/api/market-prices")
 def api_market_prices():
-    return jsonify(get_market_prices())
+    lang = get_lang()
+    data = get_market_prices()
+    if lang == "hi":
+        for p in data["prices"]:
+            p["crop"] = localize_crop_name(p["crop"], lang)
+    return jsonify(data)
 
 
 @app.route("/api/schemes")
 def api_schemes():
-    return jsonify({"schemes": get_schemes()})
+    lang = get_lang()
+    schemes = [localize_scheme(s, lang) for s in get_schemes()]
+    return jsonify({"schemes": schemes})
 
 
 @app.route("/api/insurance")
 def api_insurance():
-    return jsonify(load_json("insurance.json"))
+    lang = get_lang()
+    data = load_json("insurance.json")
+    if lang == "hi":
+        try:
+            hi = load_json("hi/insurance.json")
+            data = {**data, **hi}
+        except FileNotFoundError:
+            pass
+    return jsonify(data)
 
 
 @app.route("/api/emergency")
 def api_emergency():
     return jsonify(load_json("emergency.json"))
+
+
+@app.route("/api/disasters")
+def api_disasters():
+    lang = get_lang()
+    data = load_json("disasters.json")
+    return jsonify(localize_disaster(data, lang))
 
 
 @app.route("/api/education")
@@ -102,7 +137,15 @@ def api_crop_recommendation():
     season = data.get("season", "Kharif")
     soil_type = data.get("soil_type", "Alluvial")
     water = data.get("water_availability", "Medium")
-    return jsonify(recommend_crop(location, season, soil_type, water))
+    lang = data.get("lang", "en")
+    result = recommend_crop(location, season, soil_type, water)
+    if lang == "hi":
+        hi = load_json("hi/crop_recommendation.json")
+        crop_map = hi.get("crops", {})
+        en_crop = result["best_crop"]
+        result["best_crop"] = crop_map.get(en_crop, en_crop)
+        result["reasoning"] = result["reasoning"].replace(en_crop, result["best_crop"])
+    return jsonify(result)
 
 
 @app.route("/api/admin/diseases")

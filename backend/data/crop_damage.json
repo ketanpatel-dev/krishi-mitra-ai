@@ -1,0 +1,208 @@
+{
+  "damage_types": [
+    {
+      "id": "flood",
+      "name": "Flood Damage",
+      "icon": "🌊",
+      "immediate_steps": [
+        "Ensure your safety first — do not enter flooded fields",
+        "Take clear photos/videos of all damaged crop areas",
+        "Report damage to nearest Agriculture Office within 72 hours",
+        "Inform your bank if you have KCC or crop loan",
+        "File insurance claim if enrolled in PMFBY",
+        "Do not remove or replant until inspection is done"
+      ],
+      "required_documents": [
+        "Aadhaar card",
+        "Land records (7/12 extract or Jamabandi)",
+        "Bank account details",
+        "Photographs of crop damage (dated)",
+        "PMFBY Insurance certificate (if enrolled)",
+        "Panchayat damage certificate"
+      ],
+      "compensation": {
+        "pmfby": "Full claim for flooded/waterlogged crops under PMFBY",
+        "sdrf_input_subsidy": "Rainfed: ₹7,500/hectare | Irrigated: ₹13,500/hectare (max 2 hectares)",
+        "seed_replacement": "Free seeds/fertilizers for next season from Agriculture Department"
+      },
+      "claim_process": [
+        "Report to insurance company/bank within 72 hours",
+        "Submit claim form with required documents at bank branch or CSC",
+        "Insurance company conducts field inspection / crop cutting experiment",
+        "Claim amount is credited directly to your bank account",
+        "Contact insurance officer if payment is delayed beyond 30 days"
+      ],
+      "post_recovery_tips": [
+        "Drain excess water from fields as soon as possible",
+        "Apply gypsum @ 500 kg/hectare to restore soil structure",
+        "Zinc deficiency is common after floods — apply ZnSO₄ 25kg/hectare",
+        "Replant short-duration varieties if possible",
+        "Monitor surviving crop for disease outbreaks",
+        "Apply fungicide preventively on standing crop"
+      ]
+    },
+    {
+      "id": "drought",
+      "name": "Drought Damage",
+      "icon": "🏜️",
+      "immediate_steps": [
+        "Document crop loss with clear photos and videos",
+        "Report to local Agriculture Department office",
+        "File insurance claim within 72 hours if enrolled in PMFBY",
+        "Conserve remaining water for the most critical crops",
+        "Apply mulching to reduce evaporation",
+        "Contact District Agriculture Officer for relief information"
+      ],
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account details",
+        "Crop damage photos",
+        "PMFBY insurance documents (if applicable)",
+        "Village Panchayat certificate confirming drought"
+      ],
+      "compensation": {
+        "pmfby": "PMFBY covers drought — file claim immediately if insured",
+        "state_relief": "State government announces drought relief package including input subsidy",
+        "other": "Free fodder for livestock, MGNREGA 100-day work guarantee"
+      },
+      "claim_process": [
+        "Visit nearest bank or CSC with damage photos",
+        "Submit insurance claim form within stipulated time",
+        "Agriculture officer conducts joint inspection",
+        "Claims processed and credited to bank account",
+        "Apply for input subsidy at Agriculture Office if not insured"
+      ],
+      "post_recovery_tips": [
+        "Apply mulching (straw/plastic) to retain soil moisture",
+        "Use potassium-rich fertilizers to help plants withstand stress",
+        "Consider short-duration drought-tolerant crops for next season (Bajra, Moong, Groundnut)",
+        "Plan rainwater harvesting structures — farm pond, check dam",
+        "Use drip irrigation if available — saves 30-50% water",
+        "Practice zero-tillage to maintain soil moisture"
+      ]
+    },
+    {
+      "id": "cyclone",
+      "name": "Cyclone Damage",
+      "icon": "🌀",
+      "immediate_steps": [
+        "Prioritize personal safety — do not enter fields during cyclone",
+        "After cyclone passes, assess and document all damage",
+        "Take photos of flattened crops, broken trees, damaged infrastructure",
+        "Report within 72 hours to Agriculture Department and Insurance company",
+        "Contact nearest CSC for insurance claim assistance"
+      ],
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account details",
+        "Dated cyclone damage photographs",
+        "PMFBY enrollment certificate",
+        "Panchayat damage certificate"
+      ],
+      "compensation": {
+        "pmfby": "Full claim under PMFBY for cyclone-damaged crops",
+        "input_subsidy": "State government announces special input subsidy for cyclone affected farmers",
+        "infrastructure": "Compensation for damaged farm infrastructure (pumps, shed, fencing)"
+      },
+      "claim_process": [
+        "File claim with insurance company through bank or CSC",
+        "Submit claim with all required documents within 72 hours",
+        "Get village officer to verify crop loss assessment",
+        "Insurance company processes claim",
+        "Funds credited to bank account within 15-30 days"
+      ],
+      "post_recovery_tips": [
+        "Clear debris from fields carefully",
+        "Remove damaged plant material to prevent disease",
+        "Apply balanced fertilizer to help surviving crops recover",
+        "Stake/trellis damaged fruit plants if possible",
+        "Apply fungicide as preventive measure on surviving plants",
+        "Re-sow short-duration crops for remaining season"
+      ]
+    },
+    {
+      "id": "hailstorm",
+      "name": "Hailstorm Damage",
+      "icon": "❄️",
+      "immediate_steps": [
+        "Take clear photos of all damage within 48 hours",
+        "Report hailstorm damage to local Agriculture Department immediately",
+        "File insurance claim if crop is insured under PMFBY",
+        "Contact your bank or nearest CSC for claim assistance"
+      ],
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account details",
+        "Hail damage photographs with date",
+        "Insurance documents",
+        "Village officer's damage verification report"
+      ],
+      "compensation": {
+        "pmfby": "Full compensation if crop loss exceeds 50%",
+        "sdrf_subsidy": "Input subsidy of ₹13,500/hectare (max 2 hectares) from SDRF",
+        "seeds": "Free seed distribution for re-sowing from Agriculture Department"
+      },
+      "claim_process": [
+        "Report to bank/CSC within 48 hours of hailstorm event",
+        "Submit claim with damage photos and documents",
+        "Junta/Patwari conducts field inspection",
+        "Claim approved and amount credited to bank account"
+      ],
+      "post_recovery_tips": [
+        "Prune damaged branches in orchards to encourage fresh growth",
+        "Apply Copper-based fungicide to prevent infection on damaged plant parts",
+        "Spray NPK 19:19:19 @ 5g/L to help plants recover",
+        "For severely damaged crops, re-sow immediately if season permits",
+        "Remove and destroy completely damaged plant material"
+      ]
+    },
+    {
+      "id": "pest_attack",
+      "name": "Pest Attack / Locust",
+      "icon": "🐛",
+      "immediate_steps": [
+        "Correctly identify the pest before taking action",
+        "Report pest outbreak to nearest Agriculture Department immediately",
+        "Inform neighboring farmers to take preventive measures together",
+        "Do not use broad-spectrum pesticides without proper identification",
+        "Contact Agriculture Officer for recommended pesticides and dosage"
+      ],
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Photos of pest infestation on crop",
+        "Agriculture Officer's pest identification report"
+      ],
+      "compensation": {
+        "pmfby": "PMFBY covers pest/disease attacks — file claim if enrolled",
+        "state_assistance": "Some states provide free pesticides through government supply",
+        "preventive_support": "Preventive aerial spraying in locust-affected areas by government"
+      },
+      "claim_process": [
+        "Report pest attack to nearest Agriculture Office",
+        "Get pest identification report from Agriculture Officer",
+        "Apply recommended control measures immediately",
+        "File insurance claim for crop damage within time limit",
+        "Submit photos and officer's report with insurance claim"
+      ],
+      "post_recovery_tips": [
+        "Practice crop rotation to break pest life cycles",
+        "Use pheromone traps and light traps for pest monitoring",
+        "Grow pest-resistant varieties in next season",
+        "Maintain natural enemies — avoid unnecessary pesticide use",
+        "Plant barrier crops like maize around main field",
+        "Deep summer ploughing destroys pupae in soil"
+      ]
+    }
+  ],
+  "general_helplines": [
+    { "name": "Kisan Call Centre", "number": "1800-180-1551", "hours": "6 AM - 10 PM" },
+    { "name": "PMFBY Helpline", "number": "1800-270-6779", "hours": "9 AM - 6 PM" },
+    { "name": "National Disaster Helpline", "number": "1078", "hours": "24/7" },
+    { "name": "Agriculture Department (Central)", "number": "011-23382366", "hours": "9 AM - 5:30 PM" },
+    { "name": "Animal Husbandry Emergency", "number": "1962", "hours": "24/7" }
+  ]
+}

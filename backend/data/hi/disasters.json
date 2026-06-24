@@ -1,0 +1,131 @@
+{
+  "flood": {
+    "name": "बाढ़ से क्षति",
+    "immediate_actions": [
+      "पानी पूरी तरह उतरने तक flooded खेत में न जाएं",
+      "Pump या drainage channels से खड़ा पानी निकालें",
+      "Geo-tagged photos और videos से क्षति document करें",
+      "72 घंटे के भीतर कृषि अधिकारी को रिपोर्ट करें",
+      "सड़ने से पहले कटने योग्य उपज बचाएं",
+      "पानी उतरने के बाद waterlogged मिट्टी में चूना डालें"
+    ],
+    "documents": [
+      "आधार कार्ड और bank passbook",
+      "जमीन ownership / tenancy records",
+      "Patwari से crop sowing certificate",
+      "डूबी/क्षतिग्रस्त फसल की geo-tagged photos",
+      "Revenue department की बाढ़ notification",
+      "PMFBY insurance enrollment receipt"
+    ],
+    "compensation_process": "जिला prashasan crop loss survey (Girdawari) करता है। Normal yield के मुकाबले loss percentage। Enrolled किसानों के लिए PMFBY claim automatic। State disaster relief fund से additional compensation।",
+    "insurance_claim": [
+      "बाढ़ के 72 घंटे के भीतर insurance company को inform करें",
+      "Kisan Call Centre: 1800-180-1551 पर call करें",
+      "Surveyor 7 दिन में field visit करता है",
+      "Photos और land records के साथ claim form submit करें",
+      "15-30 दिन में compensation credit"
+    ]
+  },
+  "drought": {
+    "name": "सूखे से क्षति",
+    "immediate_actions": [
+      "Critical growth stages के लिए irrigation priority दें",
+      "Soil moisture बचाने के लिए mulch डालें",
+      "Replanting में drought-tolerant varieties चुनें",
+      "Water availability के अनुसार fertilizer dose कम करें",
+      "Vegetable crops के लिए shade nets",
+      "Crop stress local agriculture office को report करें"
+    ],
+    "documents": [
+      "आधार कार्ड और bank details",
+      "Land records और sowing certificate",
+      "मुरझाई/फटी मिट्टी और फसल की photos",
+      "जिले से meteorological drought declaration",
+      "PMFBY या state drought relief enrollment"
+    ],
+    "compensation_process": "State government drought-affected blocks declare करती है। Input subsidy, seed distribution, cattle fodder packages। PMFBY enrolled होने पर yield loss cover।",
+    "insurance_claim": [
+      "Check करें block PMFBY drought coverage में है या नहीं",
+      "Harvest पर crop cutting experiment से yield loss report",
+      "Survey scheduling के लिए agriculture officer से contact",
+      "Yield data और land records के साथ claim submit"
+    ]
+  },
+  "cyclone": {
+    "name": "चक्रवात से क्षति",
+    "immediate_actions": [
+      "Field damage assess करने से पहले personal safety",
+      "48 घंटे में partially fallen plants को support दें",
+      "Salt spray हटाने के लिए light irrigation",
+      "Undamaged produce collect और store करें",
+      "Timestamped photos से सभी damage document करें",
+      "Recovery guidance के लिए nearest KVK contact करें"
+    ],
+    "documents": [
+      "आधार कार्ड और bank passbook",
+      "Land records और crop details",
+      "Multiple angles से geo-tagged damage photos",
+      "IMD cyclone alert screenshot",
+      "Revenue department damage assessment report",
+      "Insurance policy documents"
+    ],
+    "compensation_process": "State disaster management authority damage assess करती है। Central और state disaster relief funds। PMFBY notified crops cover। NDRF joint surveys।",
+    "insurance_claim": [
+      "72 घंटे में insurance company को report",
+      "Surveyor visit से पहले field clear न करें",
+      "State agriculture department mass survey coordinate करती है",
+      "Damaged area percentage के आधार पर claim"
+    ]
+  },
+  "hailstorm": {
+    "name": "ओla (Olā) से क्षति",
+    "immediate_actions": [
+      "Olā के 24 घंटे के भीतर standing crop inspect करें",
+      "Secondary infection रोकने के लिए severely damaged parts हटाएं",
+      "Fungicide spray secondary infection prevention के लिए",
+      "Crop recover हो सकती है या replanting assess करें",
+      "Olā damage visible होते ही तुरंत photos लें",
+      "Same day agriculture officer को inform करें"
+    ],
+    "documents": [
+      "आधार कार्ड और bank details",
+      "Land और sowing records",
+      "Olā-damaged crop की time-stamped photos",
+      "Padosi kisanon के witness statements",
+      "Local newspaper या IMD weather report",
+      "PMFBY enrollment proof"
+    ],
+    "compensation_process": "Patwari और agriculture officer 15 दिन में joint Girdawari। Standing crop का loss percentage। PMFBY claim enrolled farmers के लिए।",
+    "insurance_claim": [
+      "72 घंटे में insurance company को report",
+      "Survey तक damaged crop preserve रखें",
+      "Surveyor defoliation और stem breakage assess करता है",
+      "Sum insured और loss percentage पर compensation"
+    ]
+  },
+  "pest": {
+    "name": "कीट प्रकोप से क्षति",
+    "immediate_actions": [
+      "कोई chemical spray करने से पहले pest species identify करें",
+      "Recommended dose — कभी overdose न करें",
+      "Pollinators की safety के लिए शाम को spray",
+      "Monitoring के लिए pheromone traps install करें",
+      "Heavily infested plant parts हटाएं",
+      "IPM advice के लिए KVK contact करें"
+    ],
+    "documents": [
+      "आधार कार्ड और land records",
+      "Pest और damaged crop की photos",
+      "Pesticide spray records (date, chemical, dose)",
+      "Agriculture officer inspection report",
+      "PMFBY enrollment (कुछ states में pest damage cover)"
+    ],
+    "compensation_process": "State agriculture department pest outbreak declare करे तो input subsidy। PMFBY notified areas में pest damage cover। Tiddi dal central scheme cover।",
+    "insurance_claim": [
+      "Threshold से अधिक crop loss पर pest damage report",
+      "Agriculture officer pest species और damage verify करता है",
+      "Harvest पर crop cutting experiment",
+      "Officer assessment report के साथ claim submit"
+    ]
+  }
+}

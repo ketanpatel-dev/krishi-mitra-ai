@@ -1,0 +1,110 @@
+{
+  "tomato_early_blight": {
+    "name": "अर्ली ब्लाइट (प्रारंभिक झुलसा)",
+    "crop": "टमाटर",
+    "description": "अर्ली ब्लाइट टमाटर की एक common फंगल बीमारी है, जो Alternaria solani से होती है। निचली पत्तियों पर गोलाकार छल्लों वाले काले धब्बे दिखते हैं।",
+    "symptoms": ["पत्तियों पर गोलाकार छल्लों वाले भूरे धब्बे", "निचली पत्तियों का पीला होना", "समय से पहले पत्तियों का झड़ना", "तने और फलों पर काले घाव"],
+    "causes": ["Alternaria solani फंगस", "गर्म नम मौसम", "हवा का अच्छा circulation न होना", "संक्रमित बीज या पौधे का मलबा"],
+    "spread": "हवा, बारिश, contaminated tools और मिट्टी में infected मलबे से फैलता है।",
+    "affected_crops": ["टमाटर", "आलू", "बैंगन", "मिर्च"]
+  },
+  "tomato_late_blight": {
+    "name": "लेट ब्लाइट (विलंबित झुलसा)",
+    "crop": "टमाटर",
+    "description": "लेट ब्लाइट Phytophthora infestans से होने वाली विनाशकारी बीमारी है। ठंडे और गीले मौसम में तेजी से फैलती है।",
+    "symptoms": ["पत्तियों पर पानी से भige grey-green घाव", "पत्तियों की नीचे सफेद fungal growth", "फलों पर भूरा सड़न", "पौधे का तेजी से मुरझाना"],
+    "causes": ["Phytophthora infestans फंगस", "ठंडा गीला मौसम", "90% से अधिक humidity", "संक्रमित tubers या पौध"],
+    "spread": "Spores हवा से लंबी दूरी तक, बारिश और contaminated equipment से फैलते हैं।",
+    "affected_crops": ["टमाटर", "आलू"]
+  },
+  "potato_early_blight": {
+    "name": "अर्ली ब्लाइट",
+    "crop": "आलू",
+    "description": "आलू पर अर्ली ब्लाइट से पत्तियों पर bull's-eye जैसे घाव बनते हैं, जिससे photosynthesis और tuber quality कम होती है।",
+    "symptoms": ["target जैसे गोलाकार घाव", "निचली पत्तियों का पीला होना और मुरझाना", "तने पर cankers", "Tuber पर dry rot"],
+    "causes": ["Alternaria solani", "नाइट्रोजन की कमी", "पत्तियों पर लंबे समय तक नमी", "मिट्टी में crop residue"],
+    "spread": "मिट्टी में infected मलबे पर रहता है; हवा और irrigation water से फैलता है।",
+    "affected_crops": ["आलू", "टमाटर", "बैंगन"]
+  },
+  "wheat_rust": {
+    "name": "गेहूं का रतुआ (Rust)",
+    "crop": "गेहूं",
+    "description": "गेहूं का रतुआ fungal बीमारी है जिसमें पत्तियों और तनों पर लाल-भूरे pustules दिखते हैं, उपज में भारी गिरावट होती है।",
+    "symptoms": ["पत्तियों पर लाल-भूरे pustules", "पत्ती की सतह पर पीली धारियाँ", "सिकुड़े दाने", "कम tillering"],
+    "causes": ["Puccinia triticina फंगस", "15-22°C तापमान", "भारी ओस और humidity", "संवेदनशील गेहूं varieties"],
+    "spread": "Urediniospores हवा से सैकड़ों km तक फैलते हैं।",
+    "affected_crops": ["गेहूं", "जौ", "राई"]
+  },
+  "rice_blast": {
+    "name": "धान का ब्लास्ट",
+    "crop": "धान (चावल)",
+    "description": "धान का ब्लास्ट Magnaporthe oryzae से होने वाली सबसे विनाशकारी बीमारियों में से एक है, जो पौधे के सभी उपरी हिस्सों को प्रभावित करती है।",
+    "symptoms": ["हीरे के आकार के grey केंद्र वाले घाव", "Neck rot से panicle टूटना", "पत्तियों का झुलसना", "दाने भरने में कमी"],
+    "causes": ["Magnaporthe oryzae फंगस", "अधिक nitrogen उर्वरक", "बादल वाला नम मौसम", "घनी बुवाई"],
+    "spread": "Conidia हवा और बारिश से फैलते हैं; धान के बचे हुए अवशेष पर रहते हैं।",
+    "affected_crops": ["धान", "रागी", "गेहूं"]
+  },
+  "corn_gray_leaf_spot": {
+    "name": "ग्रे लीफ स्पॉट",
+    "crop": "मक्का",
+    "description": "मक्के की पत्तियों पर Cercospora zeae-maydis से होने वाली foliar बीमारी, photosynthetic क्षेत्र काफी कम कर देती है।",
+    "symptoms": ["आयताकार grey-tan घाव", "पत्ती की नसों के साथ घाव", "समय से पहले पत्तियों का सूखना", "भुट्टे का छोटा होना"],
+    "causes": ["Cercospora zeae-maydis", "लगातार मक्का की खेती", "गर्म नम मौसम", "Residue-borne inoculum"],
+    "spread": "Spores हवा और बारिश से; मक्का के residue में सर्दियों तक रहता है।",
+    "affected_crops": ["मक्का"]
+  },
+  "cotton_bollworm": {
+    "name": "कपास bollworm क्षति",
+    "crop": "कपास",
+    "description": "Cotton bollworm (Helicoverpa armigera) के larvae squares, flowers और bolls को खाते हैं, सीधे उपज घटती है।",
+    "symptoms": ["Bolls में छेद और frass", "फूल और squares की क्षति", "समय से पहले boll गिरना", "Lint quality में गिरावट"],
+    "causes": ["Helicoverpa armigera कीट", "Monoculture", "Natural predators की कमी", "गर्म शुष्क मौसम"],
+    "spread": "Adult moths लंबी दूरी migrate करते हैं; एक season में कई generation।",
+    "affected_crops": ["कपास", "टमाटर", "चना", "ज्वार"]
+  },
+  "pepper_bacterial_spot": {
+    "name": "बैक्टीरियल स्पॉट",
+    "crop": "मिर्च",
+    "description": "Xanthomonas species से होने वाली bacterial spot मिर्च की पत्तियों और फलों को प्रभावित करती है।",
+    "symptoms": ["पत्तियों पर छोटे water-soaked धब्बे", "फलों पर उभरे scabby घाव", "पत्तियों का पीला होना", "गंभीर मामले में defoliation"],
+    "causes": ["Xanthomonas euvesicatoria", "गर्म गीला मौसम", "Overhead irrigation", "संक्रमित बीज"],
+    "spread": "बारिश, workers, tools और contaminated seed से फैलता है।",
+    "affected_crops": ["मिर्च", "टमाटर"]
+  },
+  "grape_powdery_mildew": {
+    "name": "पाउडरी मिल्ड्यू",
+    "crop": "अंगूर",
+    "description": "Erysiphe necator से अंगूर की पत्तियों और berries पर सफेद powdery coating दिखती है।",
+    "symptoms": ["पत्तियों पर सफेद powdery coating", "Shoot growth रुकना", "Berry फटना", "Sugar content कम होना"],
+    "causes": ["Erysiphe necator", "गीली humidity लेकिन सूखी पत्तियाँ", "छायादार canopy", "संवेदनशील varieties"],
+    "spread": "वसंत में Ascospores; पूरे season conidia हवा से।",
+    "affected_crops": ["अंगूर", "सेब", "आम"]
+  },
+  "apple_scab": {
+    "name": "सेब scab",
+    "crop": "सेब",
+    "description": "Venturia inaequalis से सेब की scab, पत्तियों और फलों पर olive-green धब्बे बनाती है।",
+    "symptoms": ["पत्तियों पर olive-green velvety धब्बे", "फल पर scabby घाव", "समय से पहले पत्तियाँ गिरना", "फल फटना और deform होना"],
+    "causes": ["Venturia inaequalis", "वसंत की बारिश", "Overhead irrigation", "गिरी हुई पत्तियाँ"],
+    "spread": "गिरी पत्तियों से वसंत में Ascospores; हवा और बारिश से।",
+    "affected_crops": ["सेब", "नाशपाती"]
+  },
+  "mango_anthracnose": {
+    "name": "आम anthracnose",
+    "crop": "आम",
+    "description": "Colletotrichum gloeosporioides से आम anthracnose फूल, पत्तियाँ और फल को प्रभावित करता है।",
+    "symptoms": ["पत्तियों और फलों पर काले धब्बे", "Flower blight", "Stem-end rot", "Twig dieback"],
+    "causes": ["Colletotrichum gloeosporioides", "फूल आने पर बारिश", "घायिल फल", "संक्रमित plant debris"],
+    "spread": "Conidia बारिश और हवा से; infected twigs पर रहते हैं।",
+    "affected_crops": ["आम", "एवोकाडो", "पपीता"]
+  },
+  "banana_sigatoka": {
+    "name": "सिगाटोका लीफ स्पॉट",
+    "crop": "केला",
+    "description": "Black Sigatoka केले की गंभीर बीमारी है, photosynthesis और उपज कम करती है।",
+    "symptoms": ["पत्तियों पर काली धारियाँ और बड़े धब्बे", "समय से पहले पत्तियाँ सूखना", "छोटा bunch", "असमान ripening"],
+    "causes": ["Mycosphaerella fijiensis", "अधिक वर्षा और humidity", "Poor drainage", "Fungicide management की कमी"],
+    "spread": "Ascospores और conidia हवा और बारिश से लंबी दूरी तक।",
+    "affected_crops": ["केला", "Plantain"]
+  }
+}

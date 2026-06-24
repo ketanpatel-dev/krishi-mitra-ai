@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 import en from '../i18n/en.json'
 import hi from '../i18n/hi.json'
+import { createApi } from '../services/api'
 
 const translations = { en, hi }
 
@@ -19,10 +20,12 @@ export function LanguageProvider({ children }) {
     return (key, fallback = key) => dict[key] ?? translations.en[key] ?? fallback
   }, [lang])
 
+  const api = useMemo(() => createApi(lang), [lang])
+
   const toggleLang = () => setLang((prev) => (prev === 'en' ? 'hi' : 'en'))
 
   return (
-    <LanguageContext.Provider value={{ lang, setLang, toggleLang, t }}>
+    <LanguageContext.Provider value={{ lang, setLang, toggleLang, t, api }}>
       {children}
     </LanguageContext.Provider>
   )

@@ -8,6 +8,7 @@ import MarketPrices from './pages/MarketPrices'
 import Schemes from './pages/Schemes'
 import Insurance from './pages/Insurance'
 import Emergency from './pages/Emergency'
+import CropDamage from './pages/CropDamage'
 import CropRecommendation from './pages/CropRecommendation'
 import Education from './pages/Education'
 import Admin from './pages/Admin'
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/schemes" element={<Schemes />} />
         <Route path="/insurance" element={<Insurance />} />
         <Route path="/emergency" element={<Emergency />} />
+        <Route path="/damage" element={<CropDamage />} />
         <Route path="/recommend" element={<CropRecommendation />} />
         <Route path="/education" element={<Education />} />
         <Route path="/admin" element={<Admin />} />

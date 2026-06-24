@@ -2,20 +2,20 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Cloud, Droplets, Wind, Sun, AlertTriangle, Loader2 } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { api } from '../services/api'
 
 export default function Weather() {
-  const { t } = useLanguage()
+  const { t, api } = useLanguage()
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
   useEffect(() => {
+    setLoading(true)
     api.getWeather()
       .then(setData)
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false))
-  }, [])
+  }, [api])
 
   if (loading) {
     return (

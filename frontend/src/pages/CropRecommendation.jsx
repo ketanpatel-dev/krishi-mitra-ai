@@ -2,14 +2,13 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Sprout, Loader2 } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { api } from '../services/api'
 
 const seasons = ['Kharif', 'Rabi', 'Zaid']
 const soils = ['Alluvial', 'Black', 'Red', 'Laterite', 'Sandy']
 const waterLevels = ['Low', 'Medium', 'High']
 
 export default function CropRecommendation() {
-  const { t } = useLanguage()
+  const { t, api } = useLanguage()
   const [form, setForm] = useState({ location: '', season: 'Kharif', soil_type: 'Alluvial', water_availability: 'Medium' })
   const [result, setResult] = useState(null)
   const [loading, setLoading] = useState(false)

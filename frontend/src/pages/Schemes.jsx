@@ -2,17 +2,17 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ExternalLink, Loader2, ChevronDown, ChevronUp } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { api } from '../services/api'
 
 export default function Schemes() {
-  const { t, lang } = useLanguage()
+  const { t, api } = useLanguage()
   const [schemes, setSchemes] = useState([])
   const [loading, setLoading] = useState(true)
   const [expanded, setExpanded] = useState(null)
 
   useEffect(() => {
+    setLoading(true)
     api.getSchemes().then((d) => setSchemes(d.schemes)).finally(() => setLoading(false))
-  }, [])
+  }, [api])
 
   if (loading) {
     return (
@@ -29,7 +29,6 @@ export default function Schemes() {
       <div className="space-y-4">
         {schemes.map((scheme, i) => {
           const open = expanded === scheme.id
-          const name = lang === 'hi' && scheme.name_hi ? scheme.name_hi : scheme.name
           return (
             <motion.div
               key={scheme.id}
@@ -43,7 +42,7 @@ export default function Schemes() {
                 className="flex w-full items-center justify-between p-6 text-left"
               >
                 <div>
-                  <h3 className="text-xl font-bold text-krishi-dark dark:text-krishi-light">{name}</h3>
+                  <h3 className="text-xl font-bold text-krishi-dark dark:text-krishi-light">{scheme.name}</h3>
                   <p className="mt-1 text-gray-500">{scheme.short_description}</p>
                 </div>
                 {open ? <ChevronUp /> : <ChevronDown />}

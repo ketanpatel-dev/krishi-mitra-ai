@@ -1,0 +1,50 @@
+{
+  "pm_kisan": {
+    "name": "प्रधानमंत्री किसान सम्मान निधि",
+    "short_description": "सभी किसान परिवारों को वर्ष में ₹6,000 की आय सहायता, तीन equal किस्तों में।",
+    "benefits": ["वर्ष में ₹6,000 - 3 किस्तों में ₹2,000-2,000", "Bank account में direct transfer", "सभी भूमिधारक किसान परिवारों को कवर"],
+    "eligibility": ["सभी भूमिधारक किसान परिवार", "छोटे और सीमांत किसान", "खेती योग्य जमीन के records होने चाहिए"],
+    "documents": ["आधार कार्ड", "जमीन ownership records", "Bank account details", "आधार से linked mobile number"],
+    "application_process": "pmkisan.gov.in पर register करें या नजदीकी कृषि office जाएं। State verification के बाद DBT।"
+  },
+  "pmfby": {
+    "name": "प्रधानमंत्री फसल बीमा योजना (PMFBY)",
+    "short_description": "प्राकृतिक आपदाओं से फसल विफलता पर वित्तीय सहायता के लिए comprehensive crop insurance।",
+    "benefits": ["कम premium: Kharif 2%, Rabi 1.5%, commercial 5%", "Yield loss और post-harvest loss cover", "Remote sensing से claim assessment"],
+    "eligibility": ["Notified areas में notified crops उगाने वाले सभी किसान", "Loanee किसानों के लिए अनिवार्य", "Non-loanee के लिए voluntary"],
+    "documents": ["आधार कार्ड", "Bank account details", "Land records / Sowing certificate", "Crop details"],
+    "application_process": "Banks, CSCs या insurance companies के माध्यम से cutoff dates के भीतर enroll करें।"
+  },
+  "kcc": {
+    "name": "किसान क्रेडिट कार्ड (KCC)",
+    "short_description": "Subsidy interest rate पर crop cultivation और allied activities के लिए समय पर credit।",
+    "benefits": ["Land holding के अनुसार credit limit", "Prompt repayment पर 2% interest subvention", "Timely repayment पर additional 3%", "Production, maintenance, marketing cover"],
+    "eligibility": ["Tenant farmers और oral lessees सहित सभी किसान", "SHG और JLG", "Land records या tenancy proof"],
+    "documents": ["आधार कार्ड", "Land records / 7/12 extract", "Passport size photos", "Bank account details"],
+    "application_process": "नजदीकी bank branch या online portal से apply करें। Bank credit limit assess कर KCC issue करती है।"
+  },
+  "soil_health": {
+    "name": "मृदा स्वास्थ्य कार्ड योजना",
+    "short_description": "Balanced fertilizer use के लिए crop-wise nutrient recommendations के साथ free soil health cards।",
+    "benefits": ["हर 2 साल free soil testing", "Crop-specific fertilizer recommendations", "Input cost कम, soil health बेहतर", "Balanced nutrient management"],
+    "eligibility": ["भारत के सभी किसान", "छोटे और सीमांत किसानों को priority"],
+    "documents": ["आधार कार्ड", "Land details", "Field से soil sample"],
+    "application_process": "District agriculture officer या soil testing lab से संपर्क करें। 15 दिन में card issue।"
+  },
+  "enam": {
+    "name": "ई-नाम (राष्ट्रीय कृषि बाजार)",
+    "short_description": "Transparent price discovery के लिए APMC mandis को जोड़ने वाला online trading platform।",
+    "benefits": ["Online bidding से बेहतर भाव", "Transparent price discovery", "बिचौलियों की कमी", "Pan-India buyers तक पहुंच"],
+    "eligibility": ["सभी किसान, traders और FPOs", "eNAM portal पर register", "Platform पर listed commodity"],
+    "documents": ["आधार कार्ड", "Bank account details", "Mandi registration (traders)", "Mobile number"],
+    "application_process": "enam.gov.in पर Aadhaar और bank details से register करें।"
+  },
+  "pmksy": {
+    "name": "प्रधानमंत्री कृषि सिंचाई योजना",
+    "short_description": "Irrigation schemes convergence और water use efficiency से हर खेत तक सिंचाई।",
+    "benefits": ["Micro irrigation पर 55-70% subsidy", "Drip और sprinkler support", "Watershed development", "Per drop more crop"],
+    "eligibility": ["Cultivable land वाले सभी किसान", "छोटे और सीमांत किसानों को priority", "Water source availability"],
+    "documents": ["आधार कार्ड", "Land records", "Bank account details", "Water source proof"],
+    "application_process": "State agriculture/horticulture department या online portal से apply करें।"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "reporting_guide": "आपदा की घटना के 72 घंटे के भीतर फसल क्षति की सूचना दें। प्रभावित खेत की geo-tagged तस्वीरें लें। नजदीकी कृषि अधिकारी या बीमा कंपनी से संपर्क करें। सर्वेक्षण से पहले फसल न काटें।",
+  "compensation_process": "सर्वेक्षक crop cutting experiment या remote sensing से क्षति का आकलन करता है। Sum insured और loss percentage के आधार पर claim amount। 15-30 दिन में bank account में राशि।",
+  "crops": {
+    "Rice": "धान",
+    "Wheat": "गेहूं",
+    "Cotton": "कपास",
+    "Maize": "मक्का",
+    "Mustard": "सरसों",
+    "Soybean": "सोयाबीन",
+    "Groundnut": "मूंगफली",
+    "Millet": "बाजरा",
+    "Pulses": "दालें",
+    "Bajra": "बाजरा",
+    "Barley": "जौ",
+    "Chickpea": "चना",
+    "Lentil": "मसूर",
+    "Watermelon": "तरबूज",
+    "Muskmelon": "खरबूजा",
+    "Cucumber": "खीरा",
+    "Vegetables": "सब्जियां",
+    "Moong": "मूंग",
+    "Fodder": "चारा"
+  }
+}

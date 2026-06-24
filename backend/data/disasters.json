@@ -1,0 +1,153 @@
+{
+  "types": [
+    {
+      "id": "flood",
+      "name": "Flood Damage",
+      "icon": "🌊",
+      "severity": "high",
+      "immediate_actions": [
+        "Do not enter flooded fields until water recedes completely",
+        "Drain standing water using pumps or drainage channels",
+        "Document damage with geo-tagged photos and videos",
+        "Report loss to agriculture officer within 72 hours",
+        "Salvage any harvestable produce before rot sets in",
+        "Apply lime to waterlogged soil after water drains"
+      ],
+      "documents": [
+        "Aadhaar card and bank passbook",
+        "Land ownership / tenancy records",
+        "Crop sowing certificate from patwari",
+        "Geo-tagged photos of submerged/damaged crop",
+        "Revenue department flood notification (if available)",
+        "PMFBY insurance enrollment receipt"
+      ],
+      "compensation_process": "District administration conducts crop loss survey (Girdawari). Loss percentage calculated against normal yield. PMFBY claim filed automatically for enrolled farmers. State disaster relief fund may provide additional compensation.",
+      "insurance_claim": [
+        "Inform insurance company within 72 hours of flood",
+        "Call Kisan Call Centre: 1800-180-1551",
+        "Surveyor visits field within 7 days",
+        "Submit claim form with photos and land records",
+        "Compensation credited within 15-30 days"
+      ],
+      "helpline": "1800-180-1551"
+    },
+    {
+      "id": "drought",
+      "name": "Drought Damage",
+      "icon": "☀️",
+      "severity": "high",
+      "immediate_actions": [
+        "Prioritize irrigation for critical growth stages",
+        "Apply mulch to conserve soil moisture",
+        "Switch to drought-tolerant crop varieties if replanting",
+        "Reduce fertilizer dose to match water availability",
+        "Provide shade nets for vegetable crops if possible",
+        "Report crop stress to local agriculture office"
+      ],
+      "documents": [
+        "Aadhaar card and bank details",
+        "Land records and sowing certificate",
+        "Photos showing wilted/cracked soil and crop",
+        "Meteorological drought declaration from district",
+        "PMFBY or state drought relief enrollment proof"
+      ],
+      "compensation_process": "State government declares drought-affected blocks. Special relief packages announced including input subsidy, seed distribution, and cattle fodder. PMFBY covers yield loss if enrolled.",
+      "insurance_claim": [
+        "Check if your block is notified under PMFBY drought coverage",
+        "Report yield loss at harvest through crop cutting experiment",
+        "Contact agriculture officer for survey scheduling",
+        "Submit claim with yield data and land records"
+      ],
+      "helpline": "1800-180-1551"
+    },
+    {
+      "id": "cyclone",
+      "name": "Cyclone Damage",
+      "icon": "🌀",
+      "severity": "high",
+      "immediate_actions": [
+        "Ensure personal safety before assessing field damage",
+        "Uproot and support partially fallen plants within 48 hours",
+        "Remove salt spray deposits by light irrigation",
+        "Collect and store undamaged harvested produce",
+        "Document all damage with timestamped photos",
+        "Contact nearest Krishi Vigyan Kendra for recovery guidance"
+      ],
+      "documents": [
+        "Aadhaar card and bank passbook",
+        "Land records and crop details",
+        "Geo-tagged damage photos from multiple angles",
+        "IMD cyclone alert notification screenshot",
+        "Revenue department damage assessment report",
+        "Insurance policy documents"
+      ],
+      "compensation_process": "State disaster management authority assesses damage. Central and state disaster relief funds activated. PMFBY covers notified crops. NDRF and state teams conduct joint surveys.",
+      "insurance_claim": [
+        "Report within 72 hours to insurance company",
+        "Do not clear field before surveyor visit",
+        "State agriculture department coordinates mass survey",
+        "Claim processed based on percentage area damaged"
+      ],
+      "helpline": "1078"
+    },
+    {
+      "id": "hailstorm",
+      "name": "Hailstorm Damage",
+      "icon": "🧊",
+      "severity": "medium",
+      "immediate_actions": [
+        "Inspect standing crops within 24 hours of hail",
+        "Remove severely damaged plant parts to prevent disease",
+        "Apply fungicide spray to prevent secondary infection",
+        "Assess if crop can recover or needs replanting",
+        "Take photos immediately while hail damage is visible",
+        "Inform agriculture officer same day if possible"
+      ],
+      "documents": [
+        "Aadhaar card and bank details",
+        "Land and sowing records",
+        "Time-stamped photos of hail-damaged crop",
+        "Witness statements from neighboring farmers",
+        "Local newspaper or IMD weather report",
+        "PMFBY enrollment proof"
+      ],
+      "compensation_process": "Patwari and agriculture officer conduct joint Girdawari within 15 days. Loss assessed as percentage of standing crop. PMFBY claim for enrolled farmers. Some states offer hail-specific relief.",
+      "insurance_claim": [
+        "Report to insurance company within 72 hours",
+        "Preserve damaged crop until survey",
+        "Surveyor assesses defoliation and stem breakage",
+        "Compensation based on sum insured and loss percentage"
+      ],
+      "helpline": "1800-180-1551"
+    },
+    {
+      "id": "pest",
+      "name": "Pest Attack Damage",
+      "icon": "🐛",
+      "severity": "medium",
+      "immediate_actions": [
+        "Identify pest species before spraying any chemical",
+        "Use recommended dose of pesticide — never overdose",
+        "Apply during evening hours to protect pollinators",
+        "Install pheromone traps for monitoring",
+        "Remove heavily infested plant parts",
+        "Contact KVK for integrated pest management advice"
+      ],
+      "documents": [
+        "Aadhaar card and land records",
+        "Photos of pest and damaged crop",
+        "Pesticide spray records (date, chemical, dose)",
+        "Agriculture officer inspection report",
+        "PMFBY enrollment (covers pest damage in some states)"
+      ],
+      "compensation_process": "Pest outbreaks declared by state agriculture department may trigger input subsidy. PMFBY covers pest damage where notified. Locust attacks covered under central scheme.",
+      "insurance_claim": [
+        "Report pest damage if crop loss exceeds threshold",
+        "Agriculture officer verifies pest species and damage extent",
+        "Crop cutting experiment at harvest for yield loss proof",
+        "Submit claim with officer's assessment report"
+      ],
+      "helpline": "1800-180-1551"
+    }
+  ]
+}

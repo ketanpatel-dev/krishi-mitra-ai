@@ -3,10 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Mic, MicOff, Volume2 } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { api } from '../services/api'
 
 export default function VoiceAssistant() {
-  const { t, lang } = useLanguage()
+  const { t, lang, api } = useLanguage()
   const navigate = useNavigate()
   const [open, setOpen] = useState(false)
   const [listening, setListening] = useState(false)
@@ -38,6 +37,11 @@ export default function VoiceAssistant() {
         speak(lang === 'hi' ? 'बाजार भाव पृष्ठ खोला जा रहा है' : 'Opening market prices')
         return
       }
+      if (lower.includes('damage') || lower.includes('flood') || lower.includes('बाढ़') || lower.includes('क्षति')) {
+        navigate('/damage')
+        speak(lang === 'hi' ? 'फसल क्षति सहायता पृष्ठ खोला जा रहा है' : 'Opening crop damage assistance page')
+        return
+      }
       if (lower.includes('disease') || lower.includes('रोग')) {
         navigate('/detect')
         speak(lang === 'hi' ? 'रोग पहचान पृष्ठ खोला जा रहा है' : 'Opening disease detection')
@@ -52,7 +56,7 @@ export default function VoiceAssistant() {
       setResponse(err)
       speak(err)
     }
-  }, [lang, navigate, speak, t])
+  }, [api, lang, navigate, speak, t])
 
   const startListening = useCallback(() => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition

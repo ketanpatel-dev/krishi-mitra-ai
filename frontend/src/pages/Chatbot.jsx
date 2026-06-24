@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Send, Bot, User, Loader2 } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { api } from '../services/api'
 
 const examples = {
   en: [
@@ -20,7 +19,7 @@ const examples = {
 }
 
 export default function Chatbot() {
-  const { t, lang } = useLanguage()
+  const { t, lang, api } = useLanguage()
   const [messages, setMessages] = useState([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)

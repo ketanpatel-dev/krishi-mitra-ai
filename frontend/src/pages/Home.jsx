@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Scan, MessageCircle, Cloud, TrendingUp, Landmark, Mic } from 'lucide-react'
+import { Scan, MessageCircle, Cloud, TrendingUp, Landmark, Mic, AlertTriangle } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 
 const features = [
@@ -9,6 +9,7 @@ const features = [
   { icon: Cloud, key: 'home.features.weather', descKey: 'home.features.weather.desc', path: '/weather', color: 'from-sky-500 to-blue-600' },
   { icon: TrendingUp, key: 'home.features.market', descKey: 'home.features.market.desc', path: '/market', color: 'from-amber-500 to-orange-600' },
   { icon: Landmark, key: 'home.features.schemes', descKey: 'home.features.schemes.desc', path: '/schemes', color: 'from-purple-500 to-violet-600' },
+  { icon: AlertTriangle, key: 'home.features.damage', descKey: 'home.features.damage.desc', path: '/damage', color: 'from-red-500 to-rose-600' },
 ]
 
 export default function Home() {

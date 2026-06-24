@@ -10,6 +10,7 @@
   "nav.schemes": "सरकारी योजनाएं",
   "nav.insurance": "फसल बीमा",
   "nav.emergency": "आपातकाल",
+  "nav.damage": "फसल क्षति सहायता",
   "nav.recommend": "फसल सलाह",
   "nav.education": "शिक्षा",
   "nav.admin": "एडमिन",
@@ -30,6 +31,8 @@
   "home.features.market.desc": "गेहूं, चावल, टमाटर आदि के मंडी भाव।",
   "home.features.schemes": "सरकारी योजनाएं",
   "home.features.schemes.desc": "PM Kisan, PMFBY, KCC और अन्य किसान लाभ।",
+  "home.features.damage": "आपदा सहायता",
+  "home.features.damage.desc": "बाढ़, सूखा, चक्रवात और कीट प्रकोप — recovery guide और बीमा claim।",
   "detect.title": "फसल रोग पहचान",
   "detect.subtitle": "AI निदान के लिए फसल की तस्वीर अपलोड या कैमरा से लें",
   "detect.upload": "तस्वीर अपलोड",
@@ -128,5 +131,14 @@
   "severity.high": "अधिक",
   "trend.up": "बढ़ा",
   "trend.down": "घटा",
-  "trend.stable": "स्थिर"
+  "trend.stable": "स्थिर",
+  "damage.title": "फसल क्षति सहायता",
+  "damage.subtitle": "बाढ़, सूखा, चक्रवात, ओla और कीट प्रकोप के लिए तत्काल मार्गदर्शन",
+  "damage.urgent": "PMFBY बीमा claim के लिए 72 घंटे के भीतर फसल क्षति की सूचना दें। कॉल: 1800-180-1551",
+  "damage.immediate": "तुरंत क्या करें",
+  "damage.documents": "आवश्यक दस्तावेज",
+  "damage.compensation": "मुआवजा प्रक्रिया",
+  "damage.insurance": "बीमा दावा प्रक्रिया",
+  "damage.helpline": "हेल्पलाइन",
+  "damage.risk": "जोखिम"
 }

@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Save, Loader2 } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { api } from '../services/api'
 
 export default function Admin() {
-  const { t } = useLanguage()
+  const { t, api } = useLanguage()
   const [tab, setTab] = useState('diseases')
   const [diseases, setDiseases] = useState([])
   const [schemes, setSchemes] = useState([])

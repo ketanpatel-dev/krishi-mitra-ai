@@ -2,10 +2,9 @@ import { useCallback, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Upload, Camera, Loader2, AlertTriangle } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { api } from '../services/api'
 
 export default function DiseaseDetection() {
-  const { t } = useLanguage()
+  const { t, api } = useLanguage()
   const [preview, setPreview] = useState(null)
   const [loading, setLoading] = useState(false)
   const [result, setResult] = useState(null)

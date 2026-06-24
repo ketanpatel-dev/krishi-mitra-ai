@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react'
 import { Phone, FileText, HelpCircle, Loader2 } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { api } from '../services/api'
 
 export default function Insurance() {
-  const { t } = useLanguage()
+  const { t, api } = useLanguage()
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    setLoading(true)
     api.getInsurance().then(setData).finally(() => setLoading(false))
-  }, [])
+  }, [api])
 
   if (loading) {
     return (

@@ -2,19 +2,19 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { TrendingUp, TrendingDown, Minus, Loader2 } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { api } from '../services/api'
 
 const trendIcon = { up: TrendingUp, down: TrendingDown, stable: Minus }
 const trendColor = { up: 'text-green-600', down: 'text-red-600', stable: 'text-gray-500' }
 
 export default function MarketPrices() {
-  const { t } = useLanguage()
+  const { t, api } = useLanguage()
   const [prices, setPrices] = useState([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    setLoading(true)
     api.getMarketPrices().then((d) => setPrices(d.prices)).finally(() => setLoading(false))
-  }, [])
+  }, [api])
 
   if (loading) {
     return (

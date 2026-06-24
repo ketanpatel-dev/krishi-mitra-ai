@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   Home, Scan, MessageCircle, Cloud, TrendingUp, Landmark,
   Shield, Phone, Sprout, BookOpen, Settings, Menu, X,
-  Moon, Sun, Languages,
+  Moon, Sun, Languages, AlertTriangle,
 } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 import { useTheme } from '../context/ThemeContext'
@@ -18,6 +18,7 @@ const navItems = [
   { path: '/market', icon: TrendingUp, key: 'nav.market' },
   { path: '/schemes', icon: Landmark, key: 'nav.schemes' },
   { path: '/insurance', icon: Shield, key: 'nav.insurance' },
+  { path: '/damage', icon: AlertTriangle, key: 'nav.damage' },
   { path: '/emergency', icon: Phone, key: 'nav.emergency' },
   { path: '/recommend', icon: Sprout, key: 'nav.recommend' },
   { path: '/education', icon: BookOpen, key: 'nav.education' },

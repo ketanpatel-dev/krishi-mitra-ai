@@ -1,0 +1,42 @@
+{
+  "tomato_early_blight": {
+    "pesticides": ["Chlorothalonil 75% WP - 2g/L", "Mancozeb 75% WP - 2.5g/L", "Azoxystrobin 23% SC - 1ml/L"],
+    "organic": ["नीम का तेल 5ml/L साप्ताहिक", "Baking soda घोल (1 tbsp/L)", "Copper oxychloride 50% WP - 3g/L"],
+    "preventive": ["रोग-मुक्त बीज उपयोग", "Non-solanaceous फसलों के साथ crop rotation", "पौधों के बीच proper spacing", "संक्रमित मलबा हटाएं", "Overhead irrigation से बचें"],
+    "fertilizer": ["Potassium युक्त balanced NPK", "अधिक nitrogen से बचें", "Calcium nitrate cell wall strength के लिए"],
+    "water": "Drip irrigation उपयोग करें; सुबह पौधों की जड़ पर पानी दें; पत्तियाँ गीली न करें।",
+    "recovery_time": "समय पर उपचार से 2-3 सप्ताह"
+  },
+  "tomato_late_blight": {
+    "pesticides": ["Metalaxyl + Mancozeb - 2.5g/L", "Dimethomorph 50% WP - 1g/L", "Cymoxanil + Mancozeb combinations"],
+    "organic": ["Copper-based fungicides", "संक्रमित पौधे तुरंत हटाकर नष्ट करें", "Drainage सुधारें"],
+    "preventive": ["Resistant varieties बोएं", "बारिश से पहले preventive fungicide", "Volunteer plants नष्ट करें", "Hawa circulation सुनिश्चित करें"],
+    "fertilizer": ["Moderate nitrogen", "Potassium-rich उर्वरक immunity के लिए"],
+    "water": "गीले मौसम में irrigation कम करें; field drainage सुनिश्चित करें।",
+    "recovery_time": "3-4 सप्ताह; गंभीर मामले में replanting"
+  },
+  "wheat_rust": {
+    "pesticides": ["Propiconazole 25% EC - 1ml/L", "Tebuconazole 25% EC - 1ml/L", "Triadimefon 25% WP - 1g/L"],
+    "organic": ["Sulfur dust", "Alternate host weeds हटाएं", "Early sowing rust period से बचने के लिए"],
+    "preventive": ["Rust-resistant varieties", "समय पर बुवाई", "अधिक nitrogen से बचें", "Heading stage पर weekly monitoring"],
+    "fertilizer": ["Balanced NPK; late nitrogen top-dressing से बचें", "Zinc और manganese micronutrients"],
+    "water": "Grain filling के दौरान water stress से बचें।",
+    "recovery_time": "पहले संकेत पर उपचार से 1-2 सप्ताह"
+  },
+  "rice_blast": {
+    "pesticides": ["Tricyclazole 75% WP - 0.6g/L", "Isoprothiolane 40% EC - 1.5ml/L", "Carbendazim 50% WP - 1g/L"],
+    "organic": ["Silicon-rich उर्वरक", "Pseudomonas fluorescens seed treatment", "Balanced plant population"],
+    "preventive": ["Resistant varieties", "अधिक nitrogen से बचें", "20x20 cm spacing", "Weed hosts हटाएं"],
+    "fertilizer": ["Split nitrogen application", "Panicle initiation पर potassium", "Silicon fertilizers resistance बढ़ाते हैं"],
+    "water": "Intermittent irrigation; blast-favorable मौसम में prolonged flooding से बचें।",
+    "recovery_time": "2-3 सप्ताह"
+  },
+  "cotton_bollworm": {
+    "pesticides": ["Emamectin benzoate 5% SG - 0.4g/L", "Spinosad 45% SC - 0.3ml/L", "Indoxacarb 14.5% SC - 0.5ml/L"],
+    "organic": ["NPV (Nuclear Polyhedrosis Virus) spray", "Pheromone traps monitoring के लिए", "Bird perches natural predation के लिए"],
+    "preventive": ["Pheromone traps लगाएं", "सप्ताह में दो बार field scouting", "Harvest के बाद crop residue नष्ट करें", "Marigold intercrop"],
+    "fertilizer": ["Balanced NPK; अधिक nitrogen कीट आकर्षित करता है"],
+    "water": "Adequate moisture; water stress plant defense कमजोर करता है।",
+    "recovery_time": "1-2 सप्ताह प्रति generation"
+  }
+}
