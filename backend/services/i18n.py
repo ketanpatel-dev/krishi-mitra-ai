@@ -69,34 +69,73 @@ def localize_treatment(treatment, disease_id, lang):
     }
 
 
+def localize_crop_name(crop, lang):
+    if lang != "hi":
+        return crop
+    return _load_hi("crops", "_hi_crops").get(crop, crop)
+
+
 def localize_detection_result(result, lang):
+    """Localize the full detection result including crop name, disease info, and treatment.
+    
+    This handles both cases:
+    1. Known disease (disease_id matches our database)
+    2. Unknown/healthy plant (just localize crop name and description if available)
+    """
     if lang != "hi":
         return result
+    
+    result = dict(result)  # Make mutable copy
+    
+    # Always localize crop name
+    crop = result.get("crop", "")
+    result["crop"] = localize_crop_name(crop, lang)
+    
     disease_id = result.get("disease_id")
-    hi_d = _load_hi("diseases", "_hi_diseases").get(disease_id, {})
-    hi_t = _load_hi("treatments", "_hi_treatments").get(disease_id, {})
-    info = result.get("info", {})
-    treatment = result.get("treatment", {})
-    return {
-        **result,
-        "crop": hi_d.get("crop", result.get("crop")),
-        "disease": hi_d.get("name", result.get("disease")),
-        "info": {
+    
+    # Localize disease info if we have a matching disease_id
+    if disease_id:
+        hi_d = _load_hi("diseases", "_hi_diseases").get(disease_id, {})
+        hi_t = _load_hi("treatments", "_hi_treatments").get(disease_id, {})
+        info = result.get("info", {})
+        treatment = result.get("treatment", {})
+        
+        # Localize disease name
+        if "disease" in result and disease_id in _load_hi("diseases", "_hi_diseases"):
+            hi_disease = _load_hi("diseases", "_hi_diseases")[disease_id]
+            result["disease"] = hi_disease.get("name", result["disease"])
+        
+        # Localize info block
+        result["info"] = {
             "description": hi_d.get("description", info.get("description", "")),
             "symptoms": hi_d.get("symptoms", info.get("symptoms", [])),
             "causes": hi_d.get("causes", info.get("causes", [])),
             "spread": hi_d.get("spread", info.get("spread", "")),
             "affected_crops": hi_d.get("affected_crops", info.get("affected_crops", [])),
-        },
-        "treatment": {
+        }
+        
+        # Localize treatment
+        result["treatment"] = {
             "pesticides": hi_t.get("pesticides", treatment.get("pesticides", [])),
             "organic": hi_t.get("organic", treatment.get("organic", [])),
             "preventive": hi_t.get("preventive", treatment.get("preventive", [])),
             "fertilizer": hi_t.get("fertilizer", treatment.get("fertilizer", [])),
             "water": hi_t.get("water", treatment.get("water", "")),
             "recovery_time": hi_t.get("recovery_time", treatment.get("recovery_time", "")),
-        },
-    }
+        }
+    
+    # Also localize affected_crops in info if present (even without disease_id)
+    info = result.get("info", {})
+    if info and info.get("affected_crops"):
+        info["affected_crops"] = [localize_crop_name(c, lang) for c in info["affected_crops"]]
+    
+    # Localize disease name if it's "No disease detected" or similar
+    if result.get("disease") == "No disease detected":
+        result["disease"] = "कोई रोग नहीं पाया गया"
+    elif result.get("disease") == "Unable to identify plant clearly":
+        result["disease"] = "पौधे की स्पष्ट पहचान नहीं हो सकी"
+    
+    return result
 
 
 def localize_scheme(scheme, lang):
@@ -114,12 +153,6 @@ def localize_scheme(scheme, lang):
         "documents": hi.get("documents", scheme.get("documents", [])),
         "application_process": hi.get("application_process", scheme.get("application_process", "")),
     }
-
-
-def localize_crop_name(crop, lang):
-    if lang != "hi":
-        return crop
-    return _load_hi("crops", "_hi_crops").get(crop, crop)
 
 
 def localize_weather(data, lang):

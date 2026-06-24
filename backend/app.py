@@ -3,7 +3,8 @@ from dotenv import load_dotenv
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-from services.disease_detector import detect_disease, get_all_diseases, update_disease
+from services.plant_identifier import identify_plant
+from services.disease_detector import get_all_diseases, update_disease
 from services.chatbot import chat
 from services.weather import get_weather
 from services.market import get_market_prices
@@ -43,7 +44,15 @@ def api_detect_disease():
     if len(image_bytes) == 0:
         return jsonify({"error": "Empty image"}), 400
     lang = request.form.get("lang", "en")
-    result = detect_disease(image_bytes, lang)
+    
+    # Use real AI Gemini Vision-based plant identification
+    result = identify_plant(image_bytes)
+    
+    # Apply localization for Hindi if needed (handles all cases: healthy, diseased, crop name, etc.)
+    if lang == "hi" and "error" not in result:
+        from services.i18n import localize_detection_result
+        result = localize_detection_result(result, lang)
+    
     return jsonify(result)
 
 
