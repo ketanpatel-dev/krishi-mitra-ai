@@ -45,15 +45,27 @@ def api_detect_disease():
         return jsonify({"error": "Empty image"}), 400
     lang = request.form.get("lang", "en")
     
-    # Use real AI Gemini Vision-based plant identification
-    result = identify_plant(image_bytes)
+    try:
+        # Use real AI Gemini Vision-based plant identification (pass language for localized response)
+        result = identify_plant(image_bytes, lang=lang)
+        
+        # If Gemini returned an error, return proper HTTP error
+        if "error" in result:
+            return jsonify(result), 503
+        
+        # Apply localization for Hindi if needed
+        if lang == "hi":
+            from services.i18n import localize_detection_result
+            result = localize_detection_result(result, lang)
+        
+        return jsonify(result)
     
-    # Apply localization for Hindi if needed (handles all cases: healthy, diseased, crop name, etc.)
-    if lang == "hi" and "error" not in result:
-        from services.i18n import localize_detection_result
-        result = localize_detection_result(result, lang)
-    
-    return jsonify(result)
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            "error": "Analysis failed. Please try again with a clearer image."
+        }), 500
 
 
 @app.route("/api/disease/<disease_id>")

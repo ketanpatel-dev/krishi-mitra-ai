@@ -80,9 +80,9 @@ export default function Insurance() {
         </div>
       </div>
 
-      {data.programs && (
+        {data.programs && (
         <div className="glass-card p-6">
-          <h3 className="section-title mb-4">PMFBY & State Programs</h3>
+          <h3 className="section-title mb-4">{t('insurance.programs')}</h3>
           {data.programs.map((p, i) => (
             <div key={i} className="mb-4 rounded-xl bg-white/50 p-4 dark:bg-gray-800">
               <p className="font-bold">{p.name}</p>

@@ -116,14 +116,19 @@ def _estimate_severity(disease_name, confidence):
     return "low"
 
 
-def identify_plant(image_bytes):
+def identify_plant(image_bytes, lang="en"):
     """Identify plant and detect disease from image bytes using Gemini Vision AI.
+    
+    Args:
+        image_bytes: Raw image file bytes.
+        lang: Language code ("en" or "hi"). When "hi", Gemini is prompted
+              to return plant_name, description, symptoms, causes in Hindi.
     
     Returns a dict matching the frontend API contract (see module docstring),
     or dict with "error" key on failure.
     """
-    # Step 1: Call Gemini Vision for analysis
-    analysis = analyze_image(image_bytes)
+    # Step 1: Call Gemini Vision for analysis (pass language for localized response)
+    analysis = analyze_image(image_bytes, lang=lang)
     
     # Step 2: Handle errors from Gemini
     if "error" in analysis:

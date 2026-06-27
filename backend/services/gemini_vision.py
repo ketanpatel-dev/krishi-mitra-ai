@@ -21,7 +21,7 @@ def _encode_image(image_bytes):
     return b64, mime
 
 
-PLANT_ANALYSIS_PROMPT = """Analyze this plant image carefully. Return ONLY valid JSON — no markdown, no code fences, no extra text.
+ENGLISH_PROMPT = """Analyze this plant image carefully. Return ONLY valid JSON — no markdown, no code fences, no extra text.
 
 {
   "plant_name": "Common name of the plant in English (e.g. Banana, Tomato, Mango, Rice, Wheat, Jasmine, Rose, Corn, Potato)",
@@ -48,9 +48,42 @@ RULES:
 - Do NOT return anything except the raw JSON object."""
 
 
+HINDI_PROMPT = """इस पौधे की तस्वीर का ध्यानपूर्वक विश्लेषण करें। केवल वैध JSON लौटाएं — कोई मार्कडाउन, कोड फेंस या अतिरिक्त टेक्स्ट नहीं।
+
+{
+  "plant_name": "पौधे का हिंदी नाम (जैसे केला, टमाटर, आम, धान, गेहूं, चावल, जैस्मीन, गुलाब, मक्का, आलू)",
+  "scientific_name": "वैज्ञानिक नाम यदि पहचाना जाए",
+  "is_plant": true या false,
+  "health_status": "Healthy" या "Diseased" या "Unclear",
+  "disease_name": null या "रोग का पूरा नाम (जैसे अर्ली ब्लाइट, पाउडरी मिल्ड्यू, रस्ट, लीफ स्पॉट, मोज़ेक वायरस, एंथ्रैकनोज़)",
+  "confidence": 0-100,
+  "description": "आप जो देख रहे हैं उसका संक्षिप्त विवरण (1-2 वाक्य) हिंदी में",
+  "symptoms": ["तस्वीर में दिख रहा लक्षण1", "तस्वीर में दिख रहा लक्षण2"],
+  "causes": ["संभावित कारण1", "संभावित कारण2"]
+}
+
+नियम:
+- plant_name हमेशा हिंदी में दें।
+- description, symptoms, और causes हिंदी में ही दें।
+- is_plant false तभी करें जब तस्वीर में पौधा न हो (पत्ती, फूल, तना, फल, पेड़, फसल)।
+- health_status "Healthy" तभी करें जब पौधे पर कोई धब्बे, मलिनकिरण, मुरझान या असामान्यता न दिखे।
+- health_status "Diseased" तभी करें जब स्पष्ट रोग लक्षण दिखें (धब्बे, सड़न, मुरझान, मलिनकिरण, फफूंद)।
+- health_status "Unclear" करें यदि तस्वीर धुंधली, बहुत अंधेरी या अस्पष्ट हो।
+- confidence < 70 करें यदि पौधे या उसकी स्थिति स्पष्ट न हो।
+- disease_name null करें यदि health_status "Healthy" या "Unclear" हो।
+- केवल JSON ऑब्जेक्ट लौटाएं — कोई अतिरिक्त टेक्स्ट नहीं।"""
+
+
 MODEL_NAME = "gemini-2.5-flash"
 
 LOG_HEADER = "[GEMINI_VISION]"
+
+
+def _get_prompt(lang="en"):
+    """Return the appropriate prompt based on language."""
+    if lang == "hi":
+        return HINDI_PROMPT
+    return ENGLISH_PROMPT
 
 
 def _log_startup():
@@ -131,8 +164,13 @@ def ping_gemini():
         }
 
 
-def analyze_image(image_bytes):
+def analyze_image(image_bytes, lang="en"):
     """Send image to Gemini Vision API and return parsed analysis.
+
+    Args:
+        image_bytes: Raw image bytes.
+        lang: Language code ("en" or "hi"). When "hi", Gemini is prompted
+              to return plant_name, description, symptoms, causes in Hindi.
 
     Returns:
         dict with keys: plant_name, is_plant, health_status, disease_name,
@@ -149,9 +187,10 @@ def analyze_image(image_bytes):
     try:
         import google.generativeai as genai
 
+        prompt = _get_prompt(lang)
         image_bytes_len = len(image_bytes)
         image_preview = image_bytes[:8].hex()
-        print(f"{LOG_HEADER} analyze_image: bytes_len={image_bytes_len} preview_hex={image_preview}")
+        print(f"{LOG_HEADER} analyze_image: bytes_len={image_bytes_len} preview_hex={image_preview} lang={lang}")
         print(f"{LOG_HEADER} input_type={type(image_bytes).__name__}")
 
         genai.configure(api_key=api_key)
@@ -162,10 +201,10 @@ def analyze_image(image_bytes):
         print(f"{LOG_HEADER} b64_sample={image_b64[:40]}")
 
         image_part = {"mime_type": mime_type, "data": image_b64}
-        print(f"{LOG_HEADER} sending to gemini: prompt_len={len(PLANT_ANALYSIS_PROMPT)}, image_keys={list(image_part.keys())}")
+        print(f"{LOG_HEADER} sending to gemini: prompt_len={len(prompt)}, image_keys={list(image_part.keys())}")
 
         response = model.generate_content(
-            [PLANT_ANALYSIS_PROMPT, image_part]
+            [prompt, image_part]
         )
 
         raw = response.text.strip()
@@ -195,11 +234,12 @@ def analyze_image(image_bytes):
         return {"error": "google-generativeai package not installed. Run: pip install google-generativeai"}
     except Exception as e:
         error_msg = str(e)
-        print(f"{LOG_HEADER} EXCEPTION: {type(e).__name__}: {error_msg}")
+        error_type = type(e).__name__
+        print(f"{LOG_HEADER} EXCEPTION: {error_type}: {error_msg}")
         _tb.print_exc()
         return {
-            "error": f"AI analysis failed: {type(e).__name__}: {error_msg}",
-            "error_type": type(e).__name__,
+            "error": f"AI analysis service temporarily unavailable. Please try again later.",
+            "error_type": error_type,
             "message": error_msg,
             "trace": _tb.format_exc(),
         }

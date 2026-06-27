@@ -8,28 +8,67 @@
   }
 
   body {
-    @apply bg-krishi-cream text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100;
+    @apply bg-gradient-to-br from-krishi-yellow via-krishi-cream to-green-50 font-sans text-gray-900 antialiased dark:from-gray-950 dark:via-gray-900 dark:to-krishi-dark/30 dark:text-gray-100;
+  }
+
+  /* Apply Devanagari font for Hindi text */
+  [lang="hi"] body,
+  [lang="hi"] .font-hindi,
+  .hi-text {
+    font-family: 'Noto Sans Devanagari', 'Poppins', 'Segoe UI', sans-serif;
+  }
+
+  ::selection {
+    @apply bg-krishi-green/30 text-krishi-dark;
   }
 }
 
 @layer components {
   .glass-card {
-    @apply rounded-2xl border border-white/40 bg-white/70 shadow-lg backdrop-blur-glass dark:border-white/10 dark:bg-gray-900/70;
+    @apply rounded-2xl border border-white/40 bg-white/70 shadow-lg backdrop-blur-glass transition-all duration-300 hover:shadow-xl dark:border-white/10 dark:bg-gray-900/70;
+  }
+
+  .glass-card-strong {
+    @apply rounded-2xl border border-white/50 bg-white/80 shadow-xl backdrop-blur-glass dark:border-white/10 dark:bg-gray-900/80;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-krishi-green px-6 py-3 text-lg font-semibold text-white shadow-md transition hover:bg-krishi-dark focus:outline-none focus:ring-2 focus:ring-krishi-light;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-krishi-green to-emerald-600 px-6 py-3 text-lg font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:from-krishi-dark hover:to-krishi-green hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-krishi-light focus:ring-offset-2 active:scale-95;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl border-2 border-krishi-green bg-transparent px-6 py-3 text-lg font-semibold text-krishi-green transition hover:bg-krishi-green/10 dark:text-krishi-light;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border-2 border-krishi-green bg-transparent px-6 py-3 text-lg font-semibold text-krishi-green transition-all duration-300 hover:bg-krishi-green/10 hover:scale-105 dark:text-krishi-light dark:hover:bg-krishi-green/20;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-red-500 to-rose-600 px-6 py-3 text-lg font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95;
   }
 
   .page-title {
-    @apply text-3xl font-bold text-krishi-dark dark:text-krishi-light md:text-4xl;
+    @apply text-3xl font-bold text-krishi-dark dark:text-krishi-light md:text-4xl lg:text-5xl;
   }
 
   .section-title {
     @apply text-xl font-semibold text-krishi-green dark:text-krishi-light;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border border-gray-300 bg-white/50 px-4 py-3 text-base font-sans transition-all duration-200 placeholder:text-gray-400 focus:border-krishi-green focus:bg-white focus:outline-none focus:ring-2 focus:ring-krishi-green/20 dark:border-gray-600 dark:bg-gray-800/50 dark:focus:border-krishi-light dark:focus:ring-krishi-light/20;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-sm font-medium;
+  }
+
+  .badge-green {
+    @apply badge bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300;
+  }
+
+  .badge-yellow {
+    @apply badge bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300;
+  }
+
+  .badge-red {
+    @apply badge bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300;
   }
 }

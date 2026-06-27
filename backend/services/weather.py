@@ -3,7 +3,7 @@ import random
 from datetime import datetime, timedelta
 
 
-def get_weather(city="Delhi"):
+def get_weather(city="Indore"):
     api_key = os.getenv("OPENWEATHER_API_KEY")
     if api_key and api_key != "your_openweather_api_key_here":
         try:
