@@ -9,6 +9,7 @@ import {
 import { useLanguage } from '../context/LanguageContext'
 import { useTheme } from '../context/ThemeContext'
 import VoiceAssistant from './VoiceAssistant'
+import CursorGlow from './CursorGlow'
 
 const navItems = [
   { path: '/', icon: Home, key: 'nav.home' },
@@ -165,6 +166,7 @@ export default function Layout({ children }) {
       </div>
 
       <VoiceAssistant />
+      <CursorGlow />
     </div>
   )
 }

@@ -56,8 +56,8 @@ export default function DiseaseDetection() {
   }
 
   const statCards = [
-    { icon: Leaf, label: t('detect.crop'), value: result?.crop },
-    { icon: FlaskConical, label: t('detect.disease'), value: result?.disease },
+    { icon: Leaf, label: t('detect.crop'), value: result?.plant_name },
+    { icon: FlaskConical, label: t('detect.disease'), value: result?.disease_name },
     { icon: Search, label: t('detect.confidence'), value: result ? `${result.confidence}%` : null },
   ]
 
